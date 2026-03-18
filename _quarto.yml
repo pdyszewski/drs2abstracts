@@ -1,0 +1,14 @@
+project:
+  type: website
+
+website:
+  page-footer: "Copyright 2025, Piotr Dyszewski" 
+format:
+  html:
+    theme:
+      - flatly
+    css: styles.css
+    toc: true
+
+
+

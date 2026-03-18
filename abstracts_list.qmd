@@ -1,0 +1,12 @@
+---
+title: "Abstracts listing"
+listing:
+  fields: [image-alt, title, author]
+  type: grid
+  filter-ui: [title, author]
+  sort-ui: [title, author]
+  categories: unnumbered
+  contents:
+    - "abstracts/*.qmd"
+    - "abstracts/*.md"
+---

@@ -1,0 +1,216 @@
+---
+title: "Abstract example"
+author: "Piotr Dyszewski (Uniwersytet Wrocławski)"
+github: "https://github.com/pdyszewski/"
+homepage: "https://sites.google.com/site/piotrdyszewski/"
+categories:
+  - example
+  - random walk
+---
+
+<p>
+  <a href="{{< meta github >}}" 
+     class="btn btn-outline-secondary btn-sm"
+     target="_blank" 
+     rel="noopener noreferrer">
+    GitHub
+  </a>
+  <a href="{{< meta homepage >}}" 
+     class="btn btn-outline-secondary btn-sm"
+     target="_blank" 
+     rel="noopener noreferrer">
+    Website
+  </a>
+</p>
+
+This is a sample abstract to showcase the flexibility of the HTML format.
+We still support LaTeX commands
+\begin{equation*}
+	\int_\mathbb{R} f(x) \mathrm{d} x = \lim_{n \to \infty} \sum_{k} f(x_k) \Delta x_k.
+\end{equation*}
+
+**Theorem.** Theorems are stated as such, for example
+\begin{equation*}
+	1+1=2
+\end{equation*}
+
+We support images
+
+<figure data-latex-placement="h">
+<img src="obrazek.png" style="width:100.0%" />
+<figcaption>Figure caption</figcaption>
+</figure>
+
+We also support multimedia embedding
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/0_GvG1ch8m0?si=ZOifSAoVS5Vvpq9X&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+We also support interactive elements (e.g. JavaScript). Here is a random walk on a random graph
+
+<div id="sketch-rw" style="max-width: 900px; margin: 0 auto;"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+<script>
+(() => {
+  const sketch = (p) => {
+    // --- parametry ---
+    const N = 40;           // liczba węzłów
+    const K = 3;            // ile najbliższych sąsiadów łączymy (min. 2-4)
+    const STEP_EVERY = 12;   // co ile klatek wykonujemy krok (mniejsze = szybciej)
+    const TAIL = 120;       // długość ogona (historia pozycji)
+    const PADDING = 40;
+
+    let nodes = [];
+    let adj = [];
+    let current = 0;
+    let tail = [];
+    let frameCounter = 0;
+
+    function dist2(a, b) {
+      const dx = a.x - b.x, dy = a.y - b.y;
+      return dx*dx + dy*dy;
+    }
+
+    function buildGraph() {
+      nodes = [];
+      adj = Array.from({length: N}, () => []);
+      tail = [];
+
+      // węzły w losowych pozycjach
+      for (let i = 0; i < N; i++) {
+        nodes.push({
+          x: p.random(PADDING, p.width - PADDING),
+          y: p.random(PADDING, p.height - PADDING),
+        });
+      }
+
+      // k-NN (symetrycznie)
+      for (let i = 0; i < N; i++) {
+        const dists = [];
+        for (let j = 0; j < N; j++) if (j !== i) {
+          dists.push({ j, d: dist2(nodes[i], nodes[j]) });
+        }
+        dists.sort((a,b) => a.d - b.d);
+        for (let t = 0; t < K; t++) {
+          const j = dists[t].j;
+          if (!adj[i].includes(j)) adj[i].push(j);
+          if (!adj[j].includes(i)) adj[j].push(i);
+        }
+      }
+
+      current = Math.floor(p.random(N));
+      tail.push(current);
+    }
+
+    function stepWalk() {
+      const neigh = adj[current];
+      if (neigh.length === 0) return; // (nie powinno się zdarzyć przy k-NN)
+      current = neigh[Math.floor(p.random(neigh.length))];
+
+      tail.push(current);
+      if (tail.length > TAIL) tail.shift();
+    }
+
+    p.setup = () => {
+      // dopasuj do kontenera
+      const el = document.getElementById("sketch-rw");
+      const w = Math.min(900, el.clientWidth || 900);
+      p.createCanvas(w, 520).parent(el);
+
+      buildGraph();
+    };
+
+    p.windowResized = () => {
+      const el = document.getElementById("sketch-rw");
+      const w = Math.min(900, el.clientWidth || 900);
+      p.resizeCanvas(w, 520);
+      buildGraph();
+    };
+
+    p.draw = () => {
+      p.background(250);
+
+      // co STEP_EVERY klatek wykonaj krok
+      frameCounter++;
+      if (frameCounter % STEP_EVERY === 0) stepWalk();
+
+      // --- rysowanie krawędzi ---
+      p.stroke(210);
+      p.strokeWeight(1);
+      for (let i = 0; i < N; i++) {
+        for (const j of adj[i]) if (j > i) {
+          p.line(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y);
+        }
+      }
+
+      // --- ogon (ścieżka) ---
+      p.noFill();
+      p.stroke(30);
+      p.strokeWeight(2);
+      p.beginShape();
+      for (let idx = 0; idx < tail.length; idx++) {
+        const v = nodes[tail[idx]];
+        p.vertex(v.x, v.y);
+      }
+      p.endShape();
+
+      // --- węzły ---
+      for (let i = 0; i < N; i++) {
+        const v = nodes[i];
+
+        // zwykłe węzły
+        p.noStroke();
+        p.fill(245);
+        p.circle(v.x, v.y, 12);
+
+        p.stroke(120);
+        p.noFill();
+        p.circle(v.x, v.y, 12);
+      }
+
+      // --- aktualna pozycja ---
+      const c = nodes[current];
+      p.noStroke();
+      p.fill(255, 80, 80);
+      p.circle(c.x, c.y, 18);
+
+      // opis
+      p.noStroke();
+      p.fill(60);
+      p.textSize(14);
+      //p.text(`Spacer losowy po grafie (N=${N}, K=${K})  |  aktualny węzeł: ${current}`, 12, 22);
+      p.text(`left click: restart  |  Space bar: stop/run`, 12, 42);
+    };
+
+    let paused = false;
+    p.mousePressed = () => buildGraph();
+    p.keyPressed = () => {
+      if (p.key === ' ') paused = !paused;
+      if (paused) p.noLoop(); else p.loop();
+    };
+  };
+
+  new p5(sketch);
+})();
+</script>
+
+List references manually using numbers in square brackets in math
+environment: $[1]$, $[2]$, etc.
+
+**Bibliography**
+
+$[1]$ Ken-Iti, S. (1999). *Lévy Processes and Infinitely Divisible
+Distributions*. Cambridge University Press.
+
+$[2]$ Jane Smith. \"Title of the Article.\" *Journal Name*, vol. X,
+no. Y, Year, pp. Z.
+
+$[3]$ [Wikipedia article about
+Wrocław](https://en.wikipedia.org/wiki/Wroc%C5%82aw)
+
+$[4]$ [Website of the Faculty of Pure and Applied Mathematics, Wrocław
+University of Science and Technology](http://wmat.pwr.edu.pl/)
+
+$[5]$ [Website of the Mathematical Institute, University of
+Wrocław](http://www.math.uni.wroc.pl/)
+
