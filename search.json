@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "abstracts_list.html",
+    "href": "abstracts_list.html",
+    "title": "Abstracts listing",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nAbstract example\n\n\n\nPiotr Dyszewski (Uniwersytet Wrocławski)\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\n\nauthor (afiliation)\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Abstracts listing",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nAbstract example\n\n\n\nPiotr Dyszewski (Uniwersytet Wrocławski)\n\n\n\n\n\n\n\n\n\n\nTitle\n\n\n\nauthor (afiliation)\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "abstracts/abstract_template.html",
+    "href": "abstracts/abstract_template.html",
+    "title": "Title",
+    "section": "",
+    "text": "GitHub Website\n\nThis is a sample abstract for the Discrete Random Structures II Conference. Please explain your subject briefly and include selected results.\nTheorem. A major result.\nCorollary. A noteworthy consequence.\nHere is an equation: \\[\\tag{1}\na^2 + b^2 = c^2.\\]\nRefer to equations using math environment like this: \\((1)\\).\n\n\n\nimage caption\n\n\nList references manually using numbers in square brackets in math environment: \\([1]\\), \\([2]\\), etc.\nBibliography\n\\([1]\\) Ken-Iti, S. (1999). Lévy Processes and Infinitely Divisible Distributions. Cambridge University Press.\n\\([2]\\) Jane Smith. \"Title of the Article.\" Journal Name, vol. X, no. Y, Year, pp. Z. doi\n\\([3]\\) Wikipedia article about Wrocław\n\\([4]\\) Website of the Faculty of Pure and Applied Mathematics, Wrocław University of Science and Technology\n\\([5]\\) Website of the Mathematical Institute, University of Wrocław"
+  },
+  {
+    "objectID": "abstracts/1.html",
+    "href": "abstracts/1.html",
+    "title": "Abstract example",
+    "section": "",
+    "text": "GitHub Website\n\nThis is a sample abstract to showcase the flexibility of the HTML format. We still support LaTeX commands \\[\\begin{equation*}\n    \\int_\\mathbb{R} f(x) \\mathrm{d} x = \\lim_{n \\to \\infty} \\sum_{k} f(x_k) \\Delta x_k.\n\\end{equation*}\\]\nTheorem. Theorems are stated as such, for example \\[\\begin{equation*}\n    1+1=2\n\\end{equation*}\\]\nWe support images\n\n\n\nFigure caption\n\n\nWe also support multimedia embedding\n\n\nWe also support interactive elements (e.g. JavaScript). Here is a random walk on a random graph\n\n\n\n\n\nList references manually using numbers in square brackets in math environment: \\([1]\\), \\([2]\\), etc.\nBibliography\n\\([1]\\) Ken-Iti, S. (1999). Lévy Processes and Infinitely Divisible Distributions. Cambridge University Press.\n\\([2]\\) Jane Smith. \"Title of the Article.\" Journal Name, vol. X, no. Y, Year, pp. Z.\n\\([3]\\) Wikipedia article about Wrocław\n\\([4]\\) Website of the Faculty of Pure and Applied Mathematics, Wrocław University of Science and Technology\n\\([5]\\) Website of the Mathematical Institute, University of Wrocław"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

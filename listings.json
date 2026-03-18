@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/abstracts_list.html",
+    "items": [
+      "/abstracts/1.html",
+      "/abstracts/abstract_template.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/abstracts/1.html",
+      "/abstracts/abstract_template.html"
+    ]
+  }
+]
