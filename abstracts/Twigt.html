@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Adrianus Twigt (LMO, Université Paris-Saclay)">
 
-<title>Abstracts listing</title>
+<title>Growing self-similar Markov trees</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,24 +27,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-902c8507d197a10399c65acc22fef28e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-902c8507d197a10399c65acc22fef28e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image-alt','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -131,7 +101,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="quarto-light">
@@ -141,21 +111,27 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="QnJhbmNoaW5nJTIwcHJvY2Vzc2Vz">Branching processes</div><div class="category" data-category="ZXhhbXBsZQ==">example</div><div class="category" data-category="ZXhwbG9zaW9u">explosion</div><div class="category" data-category="R2VuZXJhbGl6ZWQlMjBnYW1tYSUyMGNvbnZvbHV0aW9u">Generalized gamma convolution</div><div class="category" data-category="SGV5ZGUlMjBtYXJ0aW5nYWxl">Heyde martingale</div><div class="category" data-category="SW5maW5pdGUlMjBkaXZpc2liaWxpdHk=">Infinite divisibility</div><div class="category" data-category="SXNvc3BlY3RyYWxpdHk=">Isospectrality</div><div class="category" data-category="a2V5JTIwd29yZHM=">key words</div><div class="category" data-category="TGltaXRpbmclMjBzcGVjdHJhbCUyMGRpc3RyaWJ1dGlvbg==">Limiting spectral distribution</div><div class="category" data-category="UGxhbmUlMjB0cmVl">Plane tree</div><div class="category" data-category="UmFuZG9tJTIwbWF0cml4">Random matrix</div><div class="category" data-category="cmFuZG9tJTIwd2Fsaw==">random walk</div><div class="category" data-category="WW91bmclMjBkaWFncmFt">Young diagram</div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Abstracts listing</h1>
+<h1 class="title">Growing self-similar Markov trees</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Adrianus Twigt (LMO, Université Paris-Saclay) </p>
+          </div>
+  </div>
     
   
     
@@ -166,139 +142,27 @@ window.Quarto = {
 </header>
 
 
+<p><em>Can we obtain a Brownian CRT of mass <span class="math inline">\(1/2\)</span> from a CRT of mass <span class="math inline">\(1\)</span> by cutting certain branches?</em><br>
+In this talk, I will answer that question in the much more general setting of self-similar Markov trees. Self-similar Markov trees (ssMt) are random decorated trees that encode the genealogy of a system of particles carrying positive labels, and where particles undergo splitting and growth depending on their labels in a self-similar fashion. Introduced and developed in the recent monograph <span class="math inline">\([1]\)</span>, they provide a broad generalization of Brownian and stable continuum random trees and arise naturally in various models of random geometry such as the Brownian sphere/disk. The law of a ssMt is characterized by its quadruplet <span class="math inline">\((\mathrm{a}, \sigma^2, \boldsymbol{\Xi}; \alpha)\)</span>, which specifies the features of the underlying growth–fragmentation mechanism, together with the initial decoration <span class="math inline">\(x&gt;0\)</span>.</p>
+<p>In this presentation, I focus on special cases of ssMt in which the trees started from different initial values <span class="math inline">\(x&gt;0\)</span> can be coupled into a continuous, increasing family of nested subtrees. In the case of the Brownian and stable continuum random trees, this yields surprisingly simple novel dynamics corresponding to the scaling limit of the leaf-growth algorithms of Łuczak–Winkler and Caraceni–Stauffer.</p>
+<p>Based on joint work with Nicolas Curien and William Fleurat.<br>
+<strong>Theorem.</strong> If the characteristic quadruplet <span class="math inline">\(( \mathrm{a}, \sigma^2, \boldsymbol{\Xi} ; \alpha)\)</span> of a ssMt is growing, then we can on the same probability space construct a family <span class="math inline">\(\mathtt{T}_x = (T_x, d_{T_x}, \rho_x, g_x)\)</span> for <span class="math inline">\(x &gt; 0\)</span> of decorated random trees so that<br>
+<strong>Law</strong>. For any <span class="math inline">\(x &gt; 0\)</span> the decorated tree <span class="math inline">\(\mathtt{T}_x\)</span> has law <span class="math inline">\(\mathbb{Q}_x\)</span>.<br>
+<strong>Monotonicity.</strong> The application <span class="math inline">\(x \mapsto \mathtt{T}_x\)</span> is non-decreasing for the inclusion, i.e. <span class="math inline">\(\mathtt{T}_x \subset \mathtt{T}_{x + h}\)</span>.<br>
+<strong>Continuity</strong>. The application <span class="math inline">\(x \mapsto \mathtt{T}_x\)</span> is continuous.<br>
+<strong>Markov forward.</strong> The decorated tree <span class="math inline">\(\mathtt{T}_x\)</span> comes with a sequence of points <span class="math inline">\(p_x(i) \in T_x\)</span> for <span class="math inline">\(i \geq 1\)</span>. For <span class="math inline">\(x'&lt;x\)</span>, there are weights <span class="math inline">\(w_{x' \to x}(i)&gt;0\)</span> such that <span class="math inline">\(T_x\)</span> is obtained from <span class="math inline">\(T_{x'}\)</span> by gluing independent ssMt of initial decoration <span class="math inline">\(w_{x' \to x}(i)\)</span> onto <span class="math inline">\(p_{x'}(i)\)</span>.</p>
+<figure data-latex-placement="h" class="figure">
+<img src="Brown11K-0.png" style="width:100.0%" class="figure-img"><img src="Brown11K-30.png" style="width:100.0%" class="figure-img"> <img src="Brown11K-60.png" style="width:100.0%" class="figure-img"><img src="Brown11K-100.png" style="width:100.0%" class="figure-img">
+<figcaption>
+A family of coupled Brownian CRTs with masses 0, 0.3, 0.6, 1 respectively.
+</figcaption>
+</figure>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> J. Bertoin, N. Curien, and A. Riera. “Self-similar Markov trees and scaling limits”. arXiv preprint arXiv:2407.07888 (2024). URL: <a href="https://arxiv.org/abs/2407.07888" class="uri">https://arxiv.org/abs/2407.07888</a></p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhhbXBsZSUyQ3JhbmRvbSUyMHdhbGs=" data-listing-file-modified-sort="1773846663142" data-listing-reading-time-sort="7" data-listing-word-count-sort="1295">
-<a href="./abstracts/1.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Abstract example
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Piotr Dyszewski (Uniwersytet Wrocławski)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1773932804204" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
-<a href="./abstracts/Kolesnik.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Annihilating branching Brownian motion
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Brett Kolesnik (University of Warwick)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UmFuZG9tJTIwbWF0cml4JTJDTGltaXRpbmclMjBzcGVjdHJhbCUyMGRpc3RyaWJ1dGlvbiUyQ1lvdW5nJTIwZGlhZ3JhbSUyQ1BsYW5lJTIwdHJlZSUyQ0lzb3NwZWN0cmFsaXR5" data-listing-file-modified-sort="1773933401286" data-listing-reading-time-sort="1" data-listing-word-count-sort="166">
-<a href="./abstracts/Bisi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Can one hear the shape of a random matrix?
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Elia Bisi (University of Florence)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="QnJhbmNoaW5nJTIwcHJvY2Vzc2VzJTJDZXhwbG9zaW9u" data-listing-file-modified-sort="1773934543722" data-listing-reading-time-sort="2" data-listing-word-count-sort="229">
-<a href="./abstracts/Lodewijks.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Explosive Crump–Mode–Jagers branching processes: An infinite star or path, that is the question
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Bas Lodewijks (University of Sheffield)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="QnJhbmNoaW5nJTIwcHJvY2Vzc2VzJTJDR2VuZXJhbGl6ZWQlMjBnYW1tYSUyMGNvbnZvbHV0aW9uJTJDSGV5ZGUlMjBtYXJ0aW5nYWxlJTJDSW5maW5pdGUlMjBkaXZpc2liaWxpdHk=" data-listing-file-modified-sort="1773934373438" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<a href="./abstracts/Jedidi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Generalized gamma convolution laws from continuous branching processes
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Wissem Jedidi (King Saud University &amp; Tunis El Manar University)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1773999534180" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
-<a href="./abstracts/Twigt.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Growing self-similar Markov trees
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Adrianus Twigt (LMO, Université Paris-Saclay)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="a2V5JTIwd29yZHM=" data-listing-file-modified-sort="1773846435869" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
-<a href="./abstracts/abstract_template.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Title
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-author (affiliation)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
