@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Yueyun Hu (Université Sorbonne Paris Nord)">
 
-<title>Abstracts listing</title>
+<title>Average-weight percolation on the complete graph</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,24 +27,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6b423f165eeea3787de40cb4f8e821c3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image-alt','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -131,7 +101,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="quarto-light">
@@ -141,21 +111,27 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="YmFsYW5jZSUyMGluZGV4">balance index</div><div class="category" data-category="QnJhbmNoaW5nJTIwcHJvY2Vzc2Vz">Branching processes</div><div class="category" data-category="Y29udHJhY3Rpb24lMjBtZXRob2Q=">contraction method</div><div class="category" data-category="ZXhhbXBsZQ==">example</div><div class="category" data-category="ZXhwbG9zaW9u">explosion</div><div class="category" data-category="R2VuZXJhbGl6ZWQlMjBnYW1tYSUyMGNvbnZvbHV0aW9u">Generalized gamma convolution</div><div class="category" data-category="SGV5ZGUlMjBtYXJ0aW5nYWxl">Heyde martingale</div><div class="category" data-category="SW5maW5pdGUlMjBkaXZpc2liaWxpdHk=">Infinite divisibility</div><div class="category" data-category="SXNvc3BlY3RyYWxpdHk=">Isospectrality</div><div class="category" data-category="a2V5JTIwd29yZHM=">key words</div><div class="category" data-category="TGltaXRpbmclMjBzcGVjdHJhbCUyMGRpc3RyaWJ1dGlvbg==">Limiting spectral distribution</div><div class="category" data-category="cGh5bG9nZW5ldGljJTIwdHJlZQ==">phylogenetic tree</div><div class="category" data-category="UGxhbmUlMjB0cmVl">Plane tree</div><div class="category" data-category="cmFuZG9tJTIwZ2VvbWV0cnk=">random geometry</div><div class="category" data-category="UmFuZG9tJTIwbWF0cml4">Random matrix</div><div class="category" data-category="cmFuZG9tJTIwd2Fsaw==">random walk</div><div class="category" data-category="c2NhbGluZyUyMGxpbWl0cw==">scaling limits</div><div class="category" data-category="c2VsZi1zaW1pbGFyJTIwTWFya292JTIwcHJvY2Vzc2Vz">self-similar Markov processes</div><div class="category" data-category="dHJlZSUyMHNoYXBl">tree shape</div><div class="category" data-category="d2VhayUyMGNvbnZlcmdlbmNl">weak convergence</div><div class="category" data-category="WW91bmclMjBkaWFncmFt">Young diagram</div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Abstracts listing</h1>
+<h1 class="title">Average-weight percolation on the complete graph</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Yueyun Hu (Université Sorbonne Paris Nord) </p>
+          </div>
+  </div>
     
   
     
@@ -166,184 +142,18 @@ window.Quarto = {
 </header>
 
 
+<p>This talk is based on a joint work with Elie Aïdékon (Fudan University, China).</p>
+<p>Attach to each edge of the complete graph on <span class="math inline">\(n\)</span> vertices, i.i.d. exponential random variables with mean <span class="math inline">\(n\)</span>. Aldous (1998) proved that the longest path with average weight below <span class="math inline">\(p\)</span> undergoes a phase transition at <span class="math inline">\(p=\frac{1}{e}\)</span>: it is <span class="math inline">\(o(n)\)</span> when <span class="math inline">\(p&lt;\frac{1}{e}\)</span> and of order <span class="math inline">\(n\)</span> if <span class="math inline">\(p&gt;\frac1e\)</span>. Later, Ding (2013) revealed a finer phase transition around <span class="math inline">\(\frac{1}{e}\)</span>: there exist <span class="math inline">\(c'&gt;c&gt;0\)</span> such that the length of the longest path is of order <span class="math inline">\(\ln^3 n\)</span> if <span class="math inline">\(p \le \frac{1}{e}+\frac{c}{\ln^2 n}\)</span> and is polynomial if <span class="math inline">\(p\ge  \frac{1}{e}+\frac{c'}{\ln^2 n}\)</span>. We identify the location of this phase transition and obtain sharp asymptotics of the length near criticality. The proof uses an exploration mechanism mimicking a branching random walk with selection introduced by Brunet and Derrida (1999).</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Aldous, D. (1998). On the critical value for ‘percolation’ of minimum-weight trees in the mean-field distance model. <em>Comb. Probab. Comput.</em>, <strong>7</strong>, 1–10.</p>
+<p><span class="math inline">\([2]\)</span> Bérard, J. and Gouéré, J.-B. &nbsp;(2010). Brunet-Derrida behavior of branching-selection particle systems on the line. <em>Commun. Math. Phys.</em>, <strong>298</strong>, 323–342.</p>
+<p><span class="math inline">\([3]\)</span> Brunet, E. and Derrida, B. &nbsp;(1999). Microscopic models of traveling wave equations. <em>Computer Physics Communications</em>, <strong>121-122</strong>, 376–381.</p>
+<p><span class="math inline">\([4]\)</span> Ding, J. &nbsp;(2013). Scaling window for mean-field percolation of averages. <em>Ann. Probab.</em> <strong>41</strong>, 4407–4427.</p>
+<p><span class="math inline">\([5]\)</span> Ding, J. and Goswami, S. &nbsp;(2015). Percolation of averages in the stochastic mean field model: the near-supercritical regime. <em>Electron. J. Probab.</em>, <strong>20</strong>.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhhbXBsZSUyQ3JhbmRvbSUyMHdhbGs=" data-listing-file-modified-sort="1773846663000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1295">
-<a href="./abstracts/1.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Abstract example
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Piotr Dyszewski (Uniwersytet Wrocławski)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1773932804000" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
-<a href="./abstracts/Kolesnik.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Annihilating branching Brownian motion
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Brett Kolesnik (University of Warwick)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1774278002741" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
-<a href="./abstracts/Hu.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Average-weight percolation on the complete graph
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Yueyun Hu (Université Sorbonne Paris Nord)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="UmFuZG9tJTIwbWF0cml4JTJDTGltaXRpbmclMjBzcGVjdHJhbCUyMGRpc3RyaWJ1dGlvbiUyQ1lvdW5nJTIwZGlhZ3JhbSUyQ1BsYW5lJTIwdHJlZSUyQ0lzb3NwZWN0cmFsaXR5" data-listing-file-modified-sort="1773933401000" data-listing-reading-time-sort="1" data-listing-word-count-sort="166">
-<a href="./abstracts/Bisi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Can one hear the shape of a random matrix?
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Elia Bisi (University of Florence)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="QnJhbmNoaW5nJTIwcHJvY2Vzc2VzJTJDZXhwbG9zaW9u" data-listing-file-modified-sort="1773934543000" data-listing-reading-time-sort="2" data-listing-word-count-sort="229">
-<a href="./abstracts/Lodewijks.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Explosive Crump–Mode–Jagers branching processes: An infinite star or path, that is the question
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Bas Lodewijks (University of Sheffield)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="QnJhbmNoaW5nJTIwcHJvY2Vzc2VzJTJDR2VuZXJhbGl6ZWQlMjBnYW1tYSUyMGNvbnZvbHV0aW9uJTJDSGV5ZGUlMjBtYXJ0aW5nYWxlJTJDSW5maW5pdGUlMjBkaXZpc2liaWxpdHk=" data-listing-file-modified-sort="1773934373000" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<a href="./abstracts/Jedidi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Generalized gamma convolution laws from continuous branching processes
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Wissem Jedidi (King Saud University &amp; Tunis El Manar University)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1773999534000" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
-<a href="./abstracts/Twigt.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Growing self-similar Markov trees
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Adrianus Twigt (LMO, Université Paris-Saclay)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="c2NhbGluZyUyMGxpbWl0cyUyQ3JhbmRvbSUyMGdlb21ldHJ5JTJDc2VsZi1zaW1pbGFyJTIwTWFya292JTIwcHJvY2Vzc2Vz" data-listing-file-modified-sort="1774278410196" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
-<a href="./abstracts/Riera.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metric Explorations of Random Surfaces
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Armand Riera (LPSM: Sorbonne University)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="YmFsYW5jZSUyMGluZGV4JTJDY29udHJhY3Rpb24lMjBtZXRob2QlMkNwaHlsb2dlbmV0aWMlMjB0cmVlJTJDdHJlZSUyMHNoYXBlJTJDd2VhayUyMGNvbnZlcmdlbmNl" data-listing-file-modified-sort="1774277845562" data-listing-reading-time-sort="3" data-listing-word-count-sort="542">
-<a href="./abstracts/Bartoszek.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The limit behaviour of some phylogenetic tree balance indices
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Krzysztof Bartoszek (Linköping University)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="a2V5JTIwd29yZHM=" data-listing-file-modified-sort="1773846435000" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
-<a href="./abstracts/abstract_template.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Title
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-author (affiliation)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
