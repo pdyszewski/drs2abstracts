@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Danijel Grahovac (University of Osijek, Croatia)">
 
-<title>Abstracts listing</title>
+<title>Scale invariance beyond self-similarity</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,24 +27,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-902c8507d197a10399c65acc22fef28e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-902c8507d197a10399c65acc22fef28e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,67 +70,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image-alt','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="quarto-light">
@@ -141,21 +82,32 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="YmFsYW5jZSUyMGluZGV4">balance index</div><div class="category" data-category="QnJhbmNoaW5nJTIwcHJvY2Vzc2Vz">Branching processes</div><div class="category" data-category="Y29udHJhY3Rpb24lMjBtZXRob2Q=">contraction method</div><div class="category" data-category="ZHluYW1pY2FsJTIwcGVyY29sYXRpb24=">dynamical percolation</div><div class="category" data-category="ZW52aXJvbm1lbnQlMjBwcm9jZXNz">environment process</div><div class="category" data-category="ZXhhbXBsZQ==">example</div><div class="category" data-category="ZXhwbG9zaW9u">explosion</div><div class="category" data-category="R2VuZXJhbGl6ZWQlMjBnYW1tYSUyMGNvbnZvbHV0aW9u">Generalized gamma convolution</div><div class="category" data-category="SGV5ZGUlMjBtYXJ0aW5nYWxl">Heyde martingale</div><div class="category" data-category="SW5maW5pdGUlMjBkaXZpc2liaWxpdHk=">Infinite divisibility</div><div class="category" data-category="aW50ZWdlci12YWx1ZWQlMjBwcm9jZXNzZXM=">integer-valued processes</div><div class="category" data-category="SXNvc3BlY3RyYWxpdHk=">Isospectrality</div><div class="category" data-category="a2V5JTIwd29yZHM=">key words</div><div class="category" data-category="TGltaXRpbmclMjBzcGVjdHJhbCUyMGRpc3RyaWJ1dGlvbg==">Limiting spectral distribution</div><div class="category" data-category="cGh5bG9nZW5ldGljJTIwdHJlZQ==">phylogenetic tree</div><div class="category" data-category="UGxhbmUlMjB0cmVl">Plane tree</div><div class="category" data-category="cmFuZG9tJTIwZ2VvbWV0cnk=">random geometry</div><div class="category" data-category="UmFuZG9tJTIwbWF0cml4">Random matrix</div><div class="category" data-category="cmFuZG9tJTIwd2Fsaw==">random walk</div><div class="category" data-category="c2NhbGUlMjBpbnZhcmlhbmNl">scale invariance</div><div class="category" data-category="c2NhbGluZyUyMGxpbWl0cw==">scaling limits</div><div class="category" data-category="c2VsZi1zaW1pbGFyJTIwTWFya292JTIwcHJvY2Vzc2Vz">self-similar Markov processes</div><div class="category" data-category="c2VsZi1zaW1pbGFyaXR5">self-similarity</div><div class="category" data-category="dHJlZSUyMHNoYXBl">tree shape</div><div class="category" data-category="d2VhayUyMGNvbnZlcmdlbmNl">weak convergence</div><div class="category" data-category="WW91bmclMjBkaWFncmFt">Young diagram</div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Abstracts listing</h1>
-</div>
+<h1 class="title">Scale invariance beyond self-similarity</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">scale invariance</div>
+    <div class="quarto-category">self-similarity</div>
+    <div class="quarto-category">integer-valued processes</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Danijel Grahovac (University of Osijek, Croatia) </p>
+          </div>
+  </div>
     
   
     
@@ -166,214 +118,16 @@ window.Quarto = {
 </header>
 
 
+<p>
+<a href="https://www.mathos.unios.hr/moj_profil/danijel-grahovac/" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Website </a>
+</p>
+<p>In this talk, we discuss several forms of scale invariance that extend the classical notion of self-similarity. First, we consider stochastic self-similarity (multifractality) of stochastic processes based on scaling of finite-dimensional distributions. We show some general properties of these processes and introduce new examples inspired by the idea of Lamperti transformation.</p>
+<p>We then focus on scale invariance properties of non-negative integer-valued processes. These can be defined by replacing standard multiplication with the thinning operation corresponding to a continuous-time Markov branching process. We extend this to random factors and define stochastic self-similarity for integer-valued processes. The main class of examples is provided by time-changed compound Poisson processes. Finally, we will briefly discuss ongoing work on analogous notions for point processes.</p>
+<p>This research is partly motivated by the so-called Taylor’s law, an empirical phenomenon describing a power-law relationship between sample mean and variance.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhhbXBsZSUyQ3JhbmRvbSUyMHdhbGs=" data-listing-file-modified-sort="1773846663142" data-listing-reading-time-sort="7" data-listing-word-count-sort="1295">
-<a href="./abstracts/1.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Abstract example
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Piotr Dyszewski (Uniwersytet Wrocławski)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1773932804204" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
-<a href="./abstracts/Kolesnik.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Annihilating branching Brownian motion
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Brett Kolesnik (University of Warwick)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1774278002000" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
-<a href="./abstracts/Hu.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Average-weight percolation on the complete graph
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Yueyun Hu (Université Sorbonne Paris Nord)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="ZHluYW1pY2FsJTIwcGVyY29sYXRpb24lMkNyYW5kb20lMjB3YWxrJTJDZW52aXJvbm1lbnQlMjBwcm9jZXNz" data-listing-file-modified-sort="1774369201674" data-listing-reading-time-sort="1" data-listing-word-count-sort="102">
-<a href="./abstracts/Olzhabayev.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Biased random walk on the critical curve of dynamical percolation
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Assylbek Olzhabayev (Institute of Science and Technology Austria)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="UmFuZG9tJTIwbWF0cml4JTJDTGltaXRpbmclMjBzcGVjdHJhbCUyMGRpc3RyaWJ1dGlvbiUyQ1lvdW5nJTIwZGlhZ3JhbSUyQ1BsYW5lJTIwdHJlZSUyQ0lzb3NwZWN0cmFsaXR5" data-listing-file-modified-sort="1773933401286" data-listing-reading-time-sort="1" data-listing-word-count-sort="166">
-<a href="./abstracts/Bisi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Can one hear the shape of a random matrix?
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Elia Bisi (University of Florence)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="QnJhbmNoaW5nJTIwcHJvY2Vzc2VzJTJDZXhwbG9zaW9u" data-listing-file-modified-sort="1773934543722" data-listing-reading-time-sort="2" data-listing-word-count-sort="229">
-<a href="./abstracts/Lodewijks.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Explosive Crump–Mode–Jagers branching processes: An infinite star or path, that is the question
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Bas Lodewijks (University of Sheffield)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="QnJhbmNoaW5nJTIwcHJvY2Vzc2VzJTJDR2VuZXJhbGl6ZWQlMjBnYW1tYSUyMGNvbnZvbHV0aW9uJTJDSGV5ZGUlMjBtYXJ0aW5nYWxlJTJDSW5maW5pdGUlMjBkaXZpc2liaWxpdHk=" data-listing-file-modified-sort="1773934373438" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<a href="./abstracts/Jedidi.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Generalized gamma convolution laws from continuous branching processes
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Wissem Jedidi (King Saud University &amp; Tunis El Manar University)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1773999534180" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
-<a href="./abstracts/Twigt.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Growing self-similar Markov trees
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Adrianus Twigt (LMO, Université Paris-Saclay)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="c2NhbGluZyUyMGxpbWl0cyUyQ3JhbmRvbSUyMGdlb21ldHJ5JTJDc2VsZi1zaW1pbGFyJTIwTWFya292JTIwcHJvY2Vzc2Vz" data-listing-file-modified-sort="1774278410000" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
-<a href="./abstracts/Riera.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Metric Explorations of Random Surfaces
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Armand Riera (LPSM: Sorbonne University)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="c2NhbGUlMjBpbnZhcmlhbmNlJTJDc2VsZi1zaW1pbGFyaXR5JTJDaW50ZWdlci12YWx1ZWQlMjBwcm9jZXNzZXM=" data-listing-file-modified-sort="1774434332908" data-listing-reading-time-sort="1" data-listing-word-count-sort="157">
-<a href="./abstracts/Grahovac.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Scale invariance beyond self-similarity
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Danijel Grahovac (University of Osijek, Croatia)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="YmFsYW5jZSUyMGluZGV4JTJDY29udHJhY3Rpb24lMjBtZXRob2QlMkNwaHlsb2dlbmV0aWMlMjB0cmVlJTJDdHJlZSUyMHNoYXBlJTJDd2VhayUyMGNvbnZlcmdlbmNl" data-listing-file-modified-sort="1774277845000" data-listing-reading-time-sort="3" data-listing-word-count-sort="542">
-<a href="./abstracts/Bartoszek.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The limit behaviour of some phylogenetic tree balance indices
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Krzysztof Bartoszek (Linköping University)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="a2V5JTIwd29yZHM=" data-listing-file-modified-sort="1773846435869" data-listing-reading-time-sort="1" data-listing-word-count-sort="119">
-<a href="./abstracts/abstract_template.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Title
-</h5>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-author (affiliation)
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
