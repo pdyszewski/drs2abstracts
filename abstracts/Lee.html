@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Krzysztof Bartoszek (Linköping University)">
+<meta name="author" content="Jeonghwa Lee (University of North Carolina Wilmington)">
 
-<title>The limit behaviour of some phylogenetic tree balance indices</title>
+<title>A recent development in a random walk with dependent steps and its limiting process</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,13 +119,10 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The limit behaviour of some phylogenetic tree balance indices</h1>
+<h1 class="title">A recent development in a random walk with dependent steps and its limiting process</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">balance index</div>
-    <div class="quarto-category">contraction method</div>
-    <div class="quarto-category">phylogenetic tree</div>
-    <div class="quarto-category">tree shape</div>
-    <div class="quarto-category">weak convergence</div>
+    <div class="quarto-category">example</div>
+    <div class="quarto-category">random walk</div>
   </div>
   </div>
 
@@ -136,7 +133,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Krzysztof Bartoszek (Linköping University) </p>
+             <p>Jeonghwa Lee (University of North Carolina Wilmington) </p>
           </div>
   </div>
     
@@ -150,27 +147,13 @@ window.Quarto = {
 
 
 <p>
-<a href="https://github.com/krzbar" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> GitHub </a> <a href="https://www.ida.liu.se/~krzba67/" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Website </a>
+<a href="https://sites.google.com/view/jeonghwa/home" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Website </a>
 </p>
-<p>Balance indices for phylogenetic trees, like Colless’s <span class="math inline">\([8]\)</span> Sackin’s <span class="math inline">\([12]\)</span>, the cophenetic index <span class="math inline">\([10]\)</span> or the quartet index (QI <span class="math inline">\([9]\)</span>) admit a recursive representation that allows for finding an explicit representation of their (after scaling and centring) limit in distribution through the so–called contraction method. This method was particularly successful in studying the weak limit of the normalized number of comparisons in the Quicksort algorithm <span class="math inline">\([11]\)</span>.</p>
-<p>Commonly the weak limits of the (scaled and centred) indices were studied for pure–birth or uniform models of tree growth (e.g. <span class="math inline">\([3,6,7]\)</span>). However, in <span class="math inline">\([9]\)</span> the QI was considered for much wider class of phylogenetic tree models–Aldous’s <span class="math inline">\(\beta\)</span> model <span class="math inline">\([1,2]\)</span>. In <span class="math inline">\([4]\)</span> we showed that the contraction method can be successfully used to characterize the weak–limit of a much wide class of indices under Aldous’s <span class="math inline">\(\beta\ge 0\)</span> model. Namely, if for a rooted binary tree with <span class="math inline">\(n\)</span> leaves, a normalized index, <span class="math inline">\(Y_{n}\)</span>, satisfies the recursive equation <span class="math display">\[Y_{n} = \left(\frac{L_{n}}{n} \right)^{r} Y_{L\_{n}} + \left(1-\frac{L_{n}}{n} \right)^{r} Y_{n-L_{n}}
-+C_{n}(L_{n}),\]</span> where <span class="math inline">\(L_{n}\)</span> is the leaf clade size of one of the two daughter clades of the root, and <span class="math display">\[C_{n}(i)=n^{-r}\left(\sum\limits_{r_{1}+r_{2}+r_{3}}C_{r_{1},r_{2},r_{3}}i^{r_{i}}(n-i)^{r_{2}}n^{r_{3}}+h_{n}(i)
-\right)\]</span> is such that under our model <span class="math inline">\(\mathrm{E}[C_{n}(L_{n})]=0\)</span>, and <span class="math inline">\(\sup_{i}n^{r}h_{n}(i)\to 0\)</span> and <span class="math inline">\(\mathrm{E}[Y_{n}^{2}]\)</span> is uniformly bounded, then <span class="math inline">\(Y_{n}\)</span> converges in the Wasserstein <span class="math inline">\(d\)</span>–metric, to a random variable whose distribution is the unique fixed point of a particular transformation.</p>
-<p>In the talk we will discuss the above result, its limit and examples of phylogenetic tree indices that fall into this framework (e.g., QI<span class="math inline">\(^{2}\)</span> <span class="math inline">\([5]\)</span>). The results will be illustrated with simulations.</p>
-<p><strong>Acknowledgments</strong> KB’s research is supported by the Swedish Research Council’s (Vetenskapsrådet) grants no. <span class="math inline">\(2017\)</span>–<span class="math inline">\(04951\)</span>, <span class="math inline">\(2025\)</span>–<span class="math inline">\(03823\)</span>, and an ELLIIT Call C grant.</p>
+<p>Recently, a generalized Bernoulli process (GBP) was developed, which is a stationary binary sequence that can have long-range dependence. The large-scale behavior of GBP resembles that of the fractional Poisson process, as both, when scaled, have the same limiting distribution. GBP was extended to include various covariance functions, and the limiting process of a random walk that follows GBP was found, called the Exponential Mittag-Leffler (EML) process. The EML process is self-similar and has stationary increments whose correlation decays with an exponential rate, power-law, or tempered power-law. The marginal density of the EML process solves a time tempered fractional diffusion equation. When Lévy processes are subordinated to the EML process, it results in various non-Markovian diffusion processes that are governed by space–time tempered fractional diffusion equations.</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> D. Aldous, Probability distributions on cladograms. Random Discrete Structures, Springer–Verlag (1996), 1–18.<br>
-<span class="math inline">\([2]\)</span> D. Aldous, Stochastic models and descriptive statistics for phylogenetic trees. Statistical Science 16 (2001), 23–34.<br>
-<span class="math inline">\([3]\)</span> K. Bartoszek, Exact and approximate limit behaviour of the Yule tree’s cophenetic index. Mathematical Biosciences 303 (2018), 26–45.<br>
-<span class="math inline">\([4]\)</span> K. Bartoszek, Limit distribution of the quartet balance index for Aldous’s <span class="math inline">\(\\beta \\ge 0\)</span>–model. Applicationes Mathematicae 47 (2020), 29-44.<br>
-<span class="math inline">\([5]\)</span> K. Bartoszek, T. M. Coronado, A. Mir and F. Rosselló, Squaring within the Colless index yields a better balance index. Mathematical Biosciences 331 (2021), 108503.<br>
-<span class="math inline">\([6]\)</span> M. G. B. Blum and O. François, On statistical tests of phylogenetic tree imbalance: The Sackin and other indices revisited. Mathematical Biosciences 195 (2005), 141–153.<br>
-<span class="math inline">\([7]\)</span> M. G. B. Blum, O. François and S. Janson, The mean, variance and limiting distribution of two statistics sensitive to phylogenetic tree balance. Annals of Applied Probability 16 (2006), 2195–2214.<br>
-<span class="math inline">\([8]\)</span> D. H. Colless, Review of “Phylogenetics: the theory and practice of phylogenetic systematics”. Systematic Zoology 31 (1982), 100–104.<br>
-<span class="math inline">\([9]\)</span> T.&nbsp;Martínez–Coronado, A.&nbsp;Mir, F.&nbsp;Rosselló and G. Valiente, A balance index for phylogenetic trees based on quartets. Journal of Mathematical Biology 79 (2019), 1105–1148.<br>
-<span class="math inline">\([10]\)</span> A. Mir, F. Rosselló and L. Rotger, A new balance index for phylogenetic trees. Mathematical Biosciences 241 (2013), 125–136.<br>
-<span class="math inline">\([11]\)</span> U. Rösler, A limit theorem for “Quicksort”. Theoretical Informatics and Applications—Informatique Théorique et Applications, 25 (1991), 85–100.<br>
-<span class="math inline">\([12]\)</span> M. J. Sackin, “Good” and “bad” phenograms. Systematic Zoology 21 (1972), 225–226.</p>
+<p><span class="math inline">\([1]\)</span> Lee, J. (2021). Generalized Bernoulli process with long-range dependence and fractional binomial distribution. Dependence Modeling, 9(1), 1-12. https://doi.org/10.1515/demo-2021-0100</p>
+<p><span class="math inline">\([2]\)</span> Lee, J. (2025). Generalized Bernoulli process and fractional Poisson process. Stochastics, 97(4), 539–570. https://doi.org/10.1080/17442508.2025.2498386</p>
+<p><span class="math inline">\([3]\)</span> Lee, J. (2026). Scaling limit of dependent random walk. Chaos, Solitons &amp; Fractals, 208, https://doi.org/10.1016/j.chaos.2026.118102.</p>
 
 
 

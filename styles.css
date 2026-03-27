@@ -26,3 +26,8 @@
 p {
   text-align: justify;
 }
+
+.quarto-title .quarto-title-meta-contents {
+  font-size: 10.6em;
+  font-weight: 700;
+}
