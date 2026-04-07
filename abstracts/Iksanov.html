@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Yueyun Hu (Université Sorbonne Paris Nord)">
+<meta name="author" content="Alexander Iksanov (Taras Shevchenko National University of Kyiv)">
 
-<title>Average-weight percolation on the complete graph</title>
+<title>On the tails of Dickman-like perpetuities</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,8 +119,13 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Average-weight percolation on the complete graph</h1>
-</div>
+<h1 class="title">On the tails of Dickman-like perpetuities</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">exponential change of measure</div>
+    <div class="quarto-category">perpetuity</div>
+    <div class="quarto-category">superexponential tail</div>
+  </div>
+  </div>
 
 
 
@@ -129,7 +134,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Yueyun Hu (Université Sorbonne Paris Nord) </p>
+             <p>Alexander Iksanov (Taras Shevchenko National University of Kyiv) </p>
           </div>
   </div>
     
@@ -142,14 +147,28 @@ window.Quarto = {
 </header>
 
 
-<p>This talk is based on a joint work with Elie Aïdékon (Fudan University, China).</p>
-<p>Attach to each edge of the complete graph on <span class="math inline">\(n\)</span> vertices, i.i.d. exponential random variables with mean <span class="math inline">\(n\)</span>. Aldous (1998) proved that the longest path with average weight below <span class="math inline">\(p\)</span> undergoes a phase transition at <span class="math inline">\(p=\frac{1}{e}\)</span>: it is <span class="math inline">\(o(n)\)</span> when <span class="math inline">\(p&lt;\frac{1}{e}\)</span> and of order <span class="math inline">\(n\)</span> if <span class="math inline">\(p&gt;\frac1e\)</span>. Later, Ding (2013) revealed a finer phase transition around <span class="math inline">\(\frac{1}{e}\)</span>: there exist <span class="math inline">\(c'&gt;c&gt;0\)</span> such that the length of the longest path is of order <span class="math inline">\(\ln^3 n\)</span> if <span class="math inline">\(p \le \frac{1}{e}+\frac{c}{\ln^2 n}\)</span> and is polynomial if <span class="math inline">\(p\ge  \frac{1}{e}+\frac{c'}{\ln^2 n}\)</span>. We identify the location of this phase transition and obtain sharp asymptotics of the length near criticality. The proof uses an exploration mechanism mimicking a branching random walk with selection introduced by Brunet and Derrida (1999).</p>
+<p>
+<a href="do.csc.knu.ua/iksan" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Website </a>
+</p>
+<p>Let <span class="math inline">\((M_k, Q_k)_{k\geq 1}\)</span> be independent copies of an <span class="math inline">\(\mathbb{R}^2\)</span>-valued random vector <span class="math inline">\((M,Q)\)</span> defined on a common probability space. Whenever a random series <span class="math display">\[Q_1+\sum_{k\geq 1}M_1\cdot\ldots\cdot M_kQ_{k+1}\]</span> converges almost surely, its sum that we denote by <span class="math inline">\(Z\)</span> is called <em>perpetuity</em>.</p>
+<p>In Theorem 3.1(a) of <span class="math inline">\([1]\)</span> it is shown that if <span class="math inline">\(|Z|&lt;\infty\)</span> a.s., <span class="math inline">\(M\)</span> and <span class="math inline">\(Q\)</span> are independent, <span class="math inline">\(\mathbb{P}\{M\in [0,1]\}=1\)</span>, the function <span class="math inline">\(\delta \mapsto \delta^{-1}\mathbb{P}\{M\in [1-\delta, 1]\}\)</span> is bounded away from <span class="math inline">\(0\)</span> and <span class="math inline">\(\infty\)</span> for small positive <span class="math inline">\(\delta\)</span> and the constant <span class="math inline">\(b:=\sup\{x: \mathbb{P}\{Q\geq x\}&gt;0\}\)</span> satisfies <span class="math inline">\(b\in (0,\infty)\)</span>, then <span class="math display">\[\begin{equation*}
+-\log \mathbb{P}\{Z&gt;t\}~\sim~ b^{-1}t\log t,\quad t\to\infty,
+\end{equation*}\]</span> that is, the right distribution tail of <span class="math inline">\(Z\)</span> exhibits a Poisson-like decay.</p>
+<p>We became curious whether a precise, rather than logarithmic, asymptotic can be derived under comparable assumptions. Theorem below answers this question in the affirmative for <em>Dickman-like perpetuities</em>, which are defined by:</p>
+<ul>
+<li><p><span class="math inline">\(M\)</span> and <span class="math inline">\(Q\)</span> are independent;</p></li>
+<li><p><span class="math inline">\(M\)</span> has a beta distribution with parameters <span class="math inline">\(\alpha&gt;0\)</span> and <span class="math inline">\(1\)</span>, that is, <span class="math inline">\(\mathbb{P}\{M\in{\rm d}x\}=\alpha x^{\alpha-1}{\rm 1}_{(0,1)}(x){\rm d}x\)</span>;</p></li>
+<li><p><span class="math inline">\(\mathbb{E} [\log^+|Q|]&lt;\infty\)</span> and</p></li>
+<li><p><span class="math inline">\(b\in (0,\infty)\)</span>.</p></li>
+</ul>
+<p>Under the standing assumptions, the distribution of <span class="math inline">\(Z\)</span> is absolutely continuous with respect to Lebesgue measure. Let <span class="math inline">\(p\)</span> denote the corresponding density. For each <span class="math inline">\(t&gt;0\)</span>, the equation <span class="math inline">\(\alpha s^{-1}(\mathbb{E}[{\rm e}^{sQ}]-1)=t\)</span> has a unique positive solution that we denote by <span class="math inline">\(s(t)\)</span>.</p>
+<p><strong>Theorem.</strong> Under the standing assumptions, as <span class="math inline">\(t\to\infty\)</span>, <span class="math display">\[p(t)~\sim~\frac{1}{\alpha (2\pi b)^{1/2}}t^{1/2}s(t) \exp\Big(-ts(t)+\alpha \int_0^{s(t)}\frac{g(y)-1}{y}{\rm d}y\Big)\]</span> and <span class="math display">\[\mathbb{P}\{Z&gt;t\}~\sim~\frac{p(t)}{s(t)}.\]</span></p>
+<p>Our proof is purely probabilistic. It is based on the exponential change of measure. Other approaches were used in [2,3] to address a similar problem for another subclass of perpetuities given by <span class="math inline">\(\int_0^\infty {\rm e}^{-S(t)}{\rm d}t\)</span>, where <span class="math inline">\((S(t))_{t\geq 0}\)</span> is a subordinator.</p>
+<p>The talk is based on work in progress joint with Oleh Iksanov. The work reported in the talk was supported by the National Research Foundation of Ukraine (project 2023.03/0059 ‘Contribution to modern theory of random series’).</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aldous, D. (1998). On the critical value for ‘percolation’ of minimum-weight trees in the mean-field distance model. <em>Comb. Probab. Comput.</em>, <strong>7</strong>, 1–10.</p>
-<p><span class="math inline">\([2]\)</span> Bérard, J. and Gouéré, J.-B. &nbsp;(2010). Brunet-Derrida behavior of branching-selection particle systems on the line. <em>Commun. Math. Phys.</em>, <strong>298</strong>, 323–342.</p>
-<p><span class="math inline">\([3]\)</span> Brunet, E. and Derrida, B. &nbsp;(1999). Microscopic models of traveling wave equations. <em>Computer Physics Communications</em>, <strong>121-122</strong>, 376–381.</p>
-<p><span class="math inline">\([4]\)</span> Ding, J. &nbsp;(2013). Scaling window for mean-field percolation of averages. <em>Ann. Probab.</em> <strong>41</strong>, 4407–4427.</p>
-<p><span class="math inline">\([5]\)</span> Ding, J. and Goswami, S. &nbsp;(2015). Percolation of averages in the stochastic mean field model: the near-supercritical regime. <em>Electron. J. Probab.</em>, <strong>20</strong>.</p>
+<p><span class="math inline">\([1]\)</span> C.&nbsp;M. Goldie and R. Grübel. "Perpetuities with thin tails." <em>Adv. Appl. Probab.</em>, <strong>28</strong>, 1996, pp.&nbsp; 463–480.</p>
+<p><span class="math inline">\([2]\)</span> B. Haas. "Precise asymptotics for the density and the upper tail of exponential functionals of subordinators." Séminaire de Probabilités LII, Lecture Notes in Math. <strong>2363</strong>, 2025, pp.&nbsp;389–426.</p>
+<p><span class="math inline">\([3]\)</span> M. Minchev and M. Savov. "Asymptotics for densities of exponential functionals of subordinators." <em>Bernoulli.</em> <strong>29</strong>, 2023, pp.&nbsp; 3307–3333.</p>
 
 
 

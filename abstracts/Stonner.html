@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Yueyun Hu (Université Sorbonne Paris Nord)">
+<meta name="author" content="Jakob Stonner (JLU Gießen)">
 
-<title>Average-weight percolation on the complete graph</title>
+<title>Growth of CMJ processes without Malthusian parameter</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,8 +119,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Average-weight percolation on the complete graph</h1>
-</div>
+<h1 class="title">Growth of CMJ processes without Malthusian parameter</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">branching processes</div>
+    <div class="quarto-category">heavy-tailed distributions</div>
+  </div>
+  </div>
 
 
 
@@ -129,7 +133,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Yueyun Hu (Université Sorbonne Paris Nord) </p>
+             <p>Jakob Stonner (JLU Gießen) </p>
           </div>
   </div>
     
@@ -142,14 +146,7 @@ window.Quarto = {
 </header>
 
 
-<p>This talk is based on a joint work with Elie Aïdékon (Fudan University, China).</p>
-<p>Attach to each edge of the complete graph on <span class="math inline">\(n\)</span> vertices, i.i.d. exponential random variables with mean <span class="math inline">\(n\)</span>. Aldous (1998) proved that the longest path with average weight below <span class="math inline">\(p\)</span> undergoes a phase transition at <span class="math inline">\(p=\frac{1}{e}\)</span>: it is <span class="math inline">\(o(n)\)</span> when <span class="math inline">\(p&lt;\frac{1}{e}\)</span> and of order <span class="math inline">\(n\)</span> if <span class="math inline">\(p&gt;\frac1e\)</span>. Later, Ding (2013) revealed a finer phase transition around <span class="math inline">\(\frac{1}{e}\)</span>: there exist <span class="math inline">\(c'&gt;c&gt;0\)</span> such that the length of the longest path is of order <span class="math inline">\(\ln^3 n\)</span> if <span class="math inline">\(p \le \frac{1}{e}+\frac{c}{\ln^2 n}\)</span> and is polynomial if <span class="math inline">\(p\ge  \frac{1}{e}+\frac{c'}{\ln^2 n}\)</span>. We identify the location of this phase transition and obtain sharp asymptotics of the length near criticality. The proof uses an exploration mechanism mimicking a branching random walk with selection introduced by Brunet and Derrida (1999).</p>
-<p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aldous, D. (1998). On the critical value for ‘percolation’ of minimum-weight trees in the mean-field distance model. <em>Comb. Probab. Comput.</em>, <strong>7</strong>, 1–10.</p>
-<p><span class="math inline">\([2]\)</span> Bérard, J. and Gouéré, J.-B. &nbsp;(2010). Brunet-Derrida behavior of branching-selection particle systems on the line. <em>Commun. Math. Phys.</em>, <strong>298</strong>, 323–342.</p>
-<p><span class="math inline">\([3]\)</span> Brunet, E. and Derrida, B. &nbsp;(1999). Microscopic models of traveling wave equations. <em>Computer Physics Communications</em>, <strong>121-122</strong>, 376–381.</p>
-<p><span class="math inline">\([4]\)</span> Ding, J. &nbsp;(2013). Scaling window for mean-field percolation of averages. <em>Ann. Probab.</em> <strong>41</strong>, 4407–4427.</p>
-<p><span class="math inline">\([5]\)</span> Ding, J. and Goswami, S. &nbsp;(2015). Percolation of averages in the stochastic mean field model: the near-supercritical regime. <em>Electron. J. Probab.</em>, <strong>20</strong>.</p>
+<p>It is well-known that the number <span class="math inline">\(N(t)\)</span> of births up to time <span class="math inline">\(t \geq 0\)</span> in a CMJ process grows asymptotically like <span class="math inline">\(\mathrm{e}^{\alpha t}\)</span> where <span class="math inline">\(\alpha &gt; 0\)</span> is the abscissa where the Laplace transform <span class="math inline">\(m\)</span> of the intensity measure <span class="math inline">\(\mu\)</span> of the reproduction point process hits the level <span class="math inline">\(1\)</span>. We consider the situation where <span class="math inline">\(m(1) &lt; 1\)</span> and <span class="math inline">\(m(\theta) = \infty\)</span> for all <span class="math inline">\(\theta &lt; 1\)</span>. We prove that under certain assumptions (including Poisson reproduction) we obtain that <span class="math inline">\(N(t)\)</span> grows like <span class="math inline">\(\mathrm{e}^{t} F(t,t+1]\)</span> where <span class="math inline">\(F(\mathrm{d} x) = \mathrm{e}^{-x}\mu(\mathrm{d} x)\)</span> is the tilted intensity measure.</p>
 
 
 

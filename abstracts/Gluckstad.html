@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Yueyun Hu (Université Sorbonne Paris Nord)">
+<meta name="author" content="Mie Glückstad (University of Oxford)">
 
-<title>Average-weight percolation on the complete graph</title>
+<title>Mass erasure of infinitely measured Polish R-trees, and applications to Lévy forests</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,8 +119,21 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Average-weight percolation on the complete graph</h1>
-</div>
+<h1 class="title">Mass erasure of infinitely measured Polish R-trees, and applications to Lévy forests</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">mass erasure</div>
+    <div class="quarto-category">measured R-trees</div>
+    <div class="quarto-category">Lévy forests</div>
+    <div class="quarto-category">Galton-Watson forests</div>
+    <div class="quarto-category">invariance principles</div>
+    <div class="quarto-category">scaling limits</div>
+    <div class="quarto-category">Gromov-Prokhorov topology</div>
+    <div class="quarto-category">Gromov-vague topology</div>
+    <div class="quarto-category">trimming</div>
+    <div class="quarto-category">local compactness</div>
+    <div class="quarto-category">infinite measures</div>
+  </div>
+  </div>
 
 
 
@@ -129,7 +142,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Yueyun Hu (Université Sorbonne Paris Nord) </p>
+             <p>Mie Glückstad (University of Oxford) </p>
           </div>
   </div>
     
@@ -142,14 +155,60 @@ window.Quarto = {
 </header>
 
 
-<p>This talk is based on a joint work with Elie Aïdékon (Fudan University, China).</p>
-<p>Attach to each edge of the complete graph on <span class="math inline">\(n\)</span> vertices, i.i.d. exponential random variables with mean <span class="math inline">\(n\)</span>. Aldous (1998) proved that the longest path with average weight below <span class="math inline">\(p\)</span> undergoes a phase transition at <span class="math inline">\(p=\frac{1}{e}\)</span>: it is <span class="math inline">\(o(n)\)</span> when <span class="math inline">\(p&lt;\frac{1}{e}\)</span> and of order <span class="math inline">\(n\)</span> if <span class="math inline">\(p&gt;\frac1e\)</span>. Later, Ding (2013) revealed a finer phase transition around <span class="math inline">\(\frac{1}{e}\)</span>: there exist <span class="math inline">\(c'&gt;c&gt;0\)</span> such that the length of the longest path is of order <span class="math inline">\(\ln^3 n\)</span> if <span class="math inline">\(p \le \frac{1}{e}+\frac{c}{\ln^2 n}\)</span> and is polynomial if <span class="math inline">\(p\ge  \frac{1}{e}+\frac{c'}{\ln^2 n}\)</span>. We identify the location of this phase transition and obtain sharp asymptotics of the length near criticality. The proof uses an exploration mechanism mimicking a branching random walk with selection introduced by Brunet and Derrida (1999).</p>
+<p>
+<a href="https://sites.google.com/view/miegluckstad/bio" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Website </a>
+</p>
+<p>In this talk we will discuss a larger ongoing project (based on the core theory introduced in an upcoming paper by Duquesne and Winkel <span class="math inline">\([4]\)</span>), developing the theory of <em>mass erasure</em>. The main difficulty this theory addresses is introducing a natural framework in which one may study convergence of finitely <span class="math inline">\([4]\)</span> / infinitely <span class="math inline">\([5a]\)</span> measured Polish <span class="math inline">\(\mathbb{R}\)</span>-trees which are <em>not</em> locally compact. Such <span class="math inline">\(\mathbb{R}\)</span>-trees may be thought of as containing large ‘hubs’, either in the form of infinite-degree branch points or accumulations of branch points, in which infinitely many of the subtrees featured are taller than some fixed size, say <span class="math inline">\(\varepsilon &gt; 0\)</span>.</p>
+<figure data-latex-placement="h" class="figure">
+<img src="Local compactness.png" style="width:100.0%" class="figure-img">
+<figcaption>
+An illustration of how local compactness (or the lack thereof) may manifest itself in a Polish <span class="math inline">ℝ</span>-tree. Here, in the form of an infinite-degree branch point, in which the subtrees have either fixed height (not locally compact) or vanishing height (locally compact).
+</figcaption>
+</figure>
+<p>Mass erasure provides a technique for trimming such <span class="math inline">\(\mathbb{R}\)</span>-trees in a similar way to the trimming or leaf-length erasure known from e.g., <span class="math inline">\([8]\)</span> or <span class="math inline">\([3]\)</span>, but where subtrees are erased according to their <em>mass</em> rather than their <em>height</em> with respect to some erasure parameter <span class="math inline">\(h &gt; 0\)</span> (controlling <em>how much mass</em> is erased, with the tree being fully recovered as <span class="math inline">\(h \searrow 0\)</span>). This allows for the extraction of simpler discrete subtrees, which may easily be studied using the classical Gromov-type topologies. Considering mass erasure across multiple parameters <span class="math inline">\(h &gt; 0\)</span> tending to zero, we may construct new topologies of <em>(weak/vague) convergence in the sense of mass erasure</em>.<br>
+We will in particular focus on how the theory of mass erasure may be applied to obtain invariance principles for Galton-Watson forests in a broader setting than what has been done in existing literature <span class="math inline">\([2,3]\)</span>. Namely, we will look at how to construct Lévy forests when the so-called <em>Grey’s condition</em> fails, using convergence in the sense of mass erasure, thus providing in full generality an analogous result to <span class="math inline">\([6]\)</span> in the setting of random trees. The below table provides an overview of the different settings in which Lévy forests may be constructed as scaling limits of Galton-Watson forests, with the mode of convergence and assumptions being the ‘strongest’ in the upper-left corner and the ‘weakest’ in the lower-right corner.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;"><strong>(Sub-)critical</strong></th>
+<th style="text-align: left;"><strong>Supercritical</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Grey</strong></td>
+<td style="text-align: left;">Duquesne and Le Gall <span class="math inline">\([2]\)</span></td>
+<td style="text-align: left;">Duquesne and Winkel <span class="math inline">\([3]\)</span></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><em>(Height functions <span class="math inline">\(\Rightarrow\)</span> Gromov-Hausdorff)</em></td>
+<td style="text-align: left;"><em>(Local Gromov-Hausdorff)</em></td>
+</tr>
+<tr class="odd">
+<td><strong>No Grey</strong></td>
+<td style="text-align: left;">Duquesne and Winkel <span class="math inline">\([4]\)</span></td>
+<td style="text-align: left;">G. <span class="math inline">\([5b]\)</span></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"><em>(Finite mass erasure)</em></td>
+<td style="text-align: left;"><em>(Infinite mass erasure)</em></td>
+</tr>
+</tbody>
+</table>
+<p>If time permits, we may also discuss some newer ongoing work aiming to characterize finitely measured Polish <span class="math inline">\(\mathbb{R}\)</span>-trees using coding-functions, in a similar manner to how height functions were used to encode and study the convergence of compact <span class="math inline">\(\mathbb{R}\)</span>-trees in <span class="math inline">\([2]\)</span>.</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aldous, D. (1998). On the critical value for ‘percolation’ of minimum-weight trees in the mean-field distance model. <em>Comb. Probab. Comput.</em>, <strong>7</strong>, 1–10.</p>
-<p><span class="math inline">\([2]\)</span> Bérard, J. and Gouéré, J.-B. &nbsp;(2010). Brunet-Derrida behavior of branching-selection particle systems on the line. <em>Commun. Math. Phys.</em>, <strong>298</strong>, 323–342.</p>
-<p><span class="math inline">\([3]\)</span> Brunet, E. and Derrida, B. &nbsp;(1999). Microscopic models of traveling wave equations. <em>Computer Physics Communications</em>, <strong>121-122</strong>, 376–381.</p>
-<p><span class="math inline">\([4]\)</span> Ding, J. &nbsp;(2013). Scaling window for mean-field percolation of averages. <em>Ann. Probab.</em> <strong>41</strong>, 4407–4427.</p>
-<p><span class="math inline">\([5]\)</span> Ding, J. and Goswami, S. &nbsp;(2015). Percolation of averages in the stochastic mean field model: the near-supercritical regime. <em>Electron. J. Probab.</em>, <strong>20</strong>.</p>
+<p><span class="math inline">\([1]\)</span> S. Athreya, W. Löhr, A. Winter (2016). <em>The gap between Gromov-vague and Gromov–Hausdorff-vague topology</em>. Stochastic Processes and Their Applications, Vol. 126, pp.&nbsp;2527-2553.</p>
+<p><span class="math inline">\([2]\)</span> T. Duquesne, J.F. Le Gall (2002). <em>Random Trees, Lévy Processes and Spatial Branching Processes</em>. Astérisque No.&nbsp;281.</p>
+<p><span class="math inline">\([3]\)</span> T. Duquesne, M. Winkel (2019). <em>Hereditary Tree Growth and Lévy Forests.</em> Stochastic Processes and their Applications, Vol. 129(10), pp. 3690-3747.</p>
+<p><span class="math inline">\([4]\)</span> T. Duquesne, M. Winkel (2026+). <em>Mass Erasure on Measured <span class="math inline">\(\mathbb{R}\)</span>-Trees and Applications to Lévy Forests</em>. In preparation.</p>
+<p><span class="math inline">\([5a]\)</span> M. Glückstad (2026+). <em>Mass erasure of infinitely measured Polish <span class="math inline">\(\mathbb{R}\)</span>-trees I: Construction, continuity, and convergence</em>. In preparation.</p>
+<p><span class="math inline">\([5b]\)</span> M. Glückstad (2026+). <em>Mass erasure of infinitely measured Polish <span class="math inline">\(\mathbb{R}\)</span>-trees II: Applications to supercritical Galton-Watson and Lévy forests</em>. In preparation.</p>
+<p><span class="math inline">\([6]\)</span> A. Grimvall (1974). <em>On the convergence of a sequence of branching processes</em>. Annals of Probability, Vol. 2(1974), pp.&nbsp;1027–1045.</p>
+<p><span class="math inline">\([7]\)</span> J.F. Le Gall, Y. Le Jan (1998). <em>Branching processes in Lévy processes: The exploration process</em>. Annals of Probability, Vol. 26(1), pp.&nbsp;213-252.</p>
+<p><span class="math inline">\([8]\)</span> J. Neveu (1986). <em>Erasing a branching tree</em>. Advances in Applied Probability, Vol. 18, pp.&nbsp;101-108.</p>
 
 
 
