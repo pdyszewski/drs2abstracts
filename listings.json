@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/abstracts_list.html",
     "items": [
       "/abstracts/Lee.html",
       "/abstracts/1.html",
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "listing": "/abstracts_list.html",
+    "listing": "/index.html",
     "items": [
       "/abstracts/Lee.html",
       "/abstracts/1.html",
