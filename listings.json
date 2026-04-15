@@ -31,7 +31,8 @@
       "/abstracts/abstract_template.html",
       "/abstracts/bai.html",
       "/abstracts/JCP.html",
-      "/abstracts/Chataignier.html"
+      "/abstracts/Chataignier.html",
+      "/abstracts/Schroeder.html"
     ]
   },
   {
@@ -66,7 +67,8 @@
       "/abstracts/abstract_template.html",
       "/abstracts/bai.html",
       "/abstracts/JCP.html",
-      "/abstracts/Chataignier.html"
+      "/abstracts/Chataignier.html",
+      "/abstracts/Schroeder.html"
     ]
   }
 ]
