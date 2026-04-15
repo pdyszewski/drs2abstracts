@@ -3,6 +3,7 @@
     "listing": "/abstracts_list.html",
     "items": [
       "/abstracts/Lee.html",
+      "/abstracts/Kriechbaum.html",
       "/abstracts/1.html",
       "/abstracts/Kolesnik.html",
       "/abstracts/Meiners.html",
@@ -16,6 +17,7 @@
       "/abstracts/Stonner.html",
       "/abstracts/Raschel.html",
       "/abstracts/Henard.html",
+      "/abstracts/engel.html",
       "/abstracts/Gluckstad.html",
       "/abstracts/Riera.html",
       "/abstracts/Bertoin.html",
@@ -35,6 +37,7 @@
     "listing": "/index.html",
     "items": [
       "/abstracts/Lee.html",
+      "/abstracts/Kriechbaum.html",
       "/abstracts/1.html",
       "/abstracts/Kolesnik.html",
       "/abstracts/Meiners.html",
@@ -48,6 +51,7 @@
       "/abstracts/Stonner.html",
       "/abstracts/Raschel.html",
       "/abstracts/Henard.html",
+      "/abstracts/engel.html",
       "/abstracts/Gluckstad.html",
       "/abstracts/Riera.html",
       "/abstracts/Bertoin.html",
