@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Paul Thévenin (Université d’Angers, France)">
+<meta name="author" content="Glib Verovkin (University of Hildesheim)">
 
-<title>Descent-biased trees and dendrons</title>
+<title>Solutions to multivariate fixed-point equations with coefficients given by nonnegative random matrices</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,14 +119,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Descent-biased trees and dendrons</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">random trees</div>
-    <div class="quarto-category">scaling limits</div>
-    <div class="quarto-category">dendrons</div>
-    <div class="quarto-category">analytic combinatorics</div>
-  </div>
-  </div>
+<h1 class="title">Solutions to multivariate fixed-point equations with coefficients given by nonnegative random matrices</h1>
+</div>
 
 
 
@@ -135,7 +129,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Paul Thévenin (Université d’Angers, France) </p>
+             <p>Glib Verovkin (University of Hildesheim) </p>
           </div>
   </div>
     
@@ -148,23 +142,8 @@ window.Quarto = {
 </header>
 
 
-<p>
-<a href="https://www.normalesup.org/~thevenin/" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Homepage </a>
-</p>
-<p>Descent-biased trees are a model of random rooted labelled trees with given size <span class="math inline">\(n\)</span>, where a tree <span class="math inline">\(t\)</span> is chosen proportionally to <span class="math inline">\(q^{des(t)}\)</span>. Here, <span class="math inline">\(q \in [0,1]\)</span> and <span class="math inline">\(des(t)\)</span> is the number of descents in <span class="math inline">\(t\)</span>, that is, the number of edges going from a vertex with smaller label to a vertex with larger label. These trees were introduced and studied in <span class="math inline">\([3]\)</span>, and are a natural interpolation between two famous models: random recursive trees, for <span class="math inline">\(q=0\)</span>, and uniform random trees for <span class="math inline">\(q=1\)</span>.</p>
-<p>We are interested in characterizing the scaling limit of such trees, depending on the parameter <span class="math inline">\(q\)</span>, as the size <span class="math inline">\(n\)</span> goes to infinity. In particular, we highlight a phase transition when <span class="math inline">\(q\)</span> depends on <span class="math inline">\(n\)</span> and is of the form <span class="math inline">\(a/n\)</span> for some <span class="math inline">\(a&gt;0\)</span>. In this critical regime, the limit is a random dendron ; dendrons were introduced recently by Elek et Tardos <span class="math inline">\([2]\)</span>, and describe all possible limits of sequences of trees converging in a weak sense.</p>
-<p>Our methods are a mix of probabilistic estimates, study of random permutations and analytic combinatorics.</p>
-<p>This is a joint work with Victor Dubach (Uppsala University, Sweden) and Stephan Wagner (TU Graz, Austria) <span class="math inline">\([1]\)</span>.</p>
-<p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Dubach V., Thévenin P., Wagner S., "Scaling limits of descent-biased trees", in preparation, 2026+</p>
-<p><span class="math inline">\([2]\)</span> Elek, G., Tardos, G. "Convergence and Limits of Finite Trees", Combinatorica 42, 821–852 (2022).</p>
-<p><span class="math inline">\([3]\)</span> Thévenin, P., Wagner, S. (2023). "Local limits of descent-biased permutations and trees", arXiv preprint arXiv:2312.11183.</p>
-<figure data-latex-placement="h" class="figure">
-<img src="q=1.png" style="width:100.0%" class="figure-img"> <img src="a=5.png" style="width:100.0%" class="figure-img"><img src="q=0.png" style="width:100.0%" class="figure-img">
-<figcaption>
-Descent-biased trees with <span class="math inline">\(n=5000\)</span> vertices, for <span class="math inline">\(q=1\)</span> (top), <span class="math inline">\(q=1/1000\)</span> (middle) and <span class="math inline">\(q=0\)</span> (bottom).
-</figcaption>
-</figure>
+<p>We consider a multivariate stochastic fixed-point equation of the form <span class="math display">\[\tag{1}
+    X\overset{d}{=}\sum_{j\ge1}T_jX_j\]</span> where <span class="math inline">\((T_1,T_2\ldots)\)</span> are random <span class="math inline">\(d\times d\)</span> matrices with nonnegative entries, <span class="math inline">\(X\)</span> is a random <span class="math inline">\(\mathbb{R}^d\)</span>-vector and <span class="math inline">\((X_1,X_2,...)\)</span> are i.i.d. copies of <span class="math inline">\(X\)</span>, independent from <span class="math inline">\((T_1,T_2,\ldots)\)</span>. Under assumptions, that coordinates of <span class="math inline">\(X\)</span> have the same sign, that <span class="math inline">\(||X||\)</span> has at most polynomially decaying tails, and several assumptions on structure of <span class="math inline">\((T_1,T_2,\ldots)\)</span>, we prove that the solution to <span class="math inline">\((1)\)</span> is a mixture of stable laws.</p>
 
 
 
