@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Paul Thévenin (Université d’Angers, France)">
+<meta name="author" content="Alicja Kołodziejska (JLU Giessen/University of Wrocław)">
 
-<title>Descent-biased trees and dendrons</title>
+<title>Central limit theorem for multi-type Crump–Mode–Jagers branching processes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,12 +119,10 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Descent-biased trees and dendrons</h1>
+<h1 class="title">Central limit theorem for multi-type Crump–Mode–Jagers branching processes</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">random trees</div>
-    <div class="quarto-category">scaling limits</div>
-    <div class="quarto-category">dendrons</div>
-    <div class="quarto-category">analytic combinatorics</div>
+    <div class="quarto-category">branching processes</div>
+    <div class="quarto-category">central limit theorem</div>
   </div>
   </div>
 
@@ -135,7 +133,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Paul Thévenin (Université d’Angers, France) </p>
+             <p>Alicja Kołodziejska (JLU Giessen/University of Wrocław) </p>
           </div>
   </div>
     
@@ -148,23 +146,9 @@ window.Quarto = {
 </header>
 
 
-<p>
-<a href="https://www.normalesup.org/~thevenin/" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Homepage </a>
-</p>
-<p>Descent-biased trees are a model of random rooted labelled trees with given size <span class="math inline">\(n\)</span>, where a tree <span class="math inline">\(t\)</span> is chosen proportionally to <span class="math inline">\(q^{des(t)}\)</span>. Here, <span class="math inline">\(q \in [0,1]\)</span> and <span class="math inline">\(des(t)\)</span> is the number of descents in <span class="math inline">\(t\)</span>, that is, the number of edges going from a vertex with smaller label to a vertex with larger label. These trees were introduced and studied in <span class="math inline">\([3]\)</span>, and are a natural interpolation between two famous models: random recursive trees, for <span class="math inline">\(q=0\)</span>, and uniform random trees for <span class="math inline">\(q=1\)</span>.</p>
-<p>We are interested in characterizing the scaling limit of such trees, depending on the parameter <span class="math inline">\(q\)</span>, as the size <span class="math inline">\(n\)</span> goes to infinity. In particular, we highlight a phase transition when <span class="math inline">\(q\)</span> depends on <span class="math inline">\(n\)</span> and is of the form <span class="math inline">\(a/n\)</span> for some <span class="math inline">\(a&gt;0\)</span>. In this critical regime, the limit is a random dendron ; dendrons were introduced recently by Elek et Tardos <span class="math inline">\([2]\)</span>, and describe all possible limits of sequences of trees converging in a weak sense.</p>
-<p>Our methods are a mix of probabilistic estimates, study of random permutations and analytic combinatorics.</p>
-<p>This is a joint work with Victor Dubach (Uppsala University, Sweden) and Stephan Wagner (TU Graz, Austria) <span class="math inline">\([1]\)</span>.</p>
-<p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Dubach V., Thévenin P., Wagner S., "Scaling limits of descent-biased trees", in preparation, 2026+</p>
-<p><span class="math inline">\([2]\)</span> Elek, G., Tardos, G. "Convergence and Limits of Finite Trees", Combinatorica 42, 821–852 (2022).</p>
-<p><span class="math inline">\([3]\)</span> Thévenin, P., Wagner, S. (2023). "Local limits of descent-biased permutations and trees", arXiv preprint arXiv:2312.11183.</p>
-<figure data-latex-placement="h" class="figure">
-<img src="q=1.png" style="width:100.0%" class="figure-img"> <img src="a=5.png" style="width:100.0%" class="figure-img"><img src="q=0.png" style="width:100.0%" class="figure-img">
-<figcaption>
-Descent-biased trees with <span class="math inline">\(n=5000\)</span> vertices, for <span class="math inline">\(q=1\)</span> (top), <span class="math inline">\(q=1/1000\)</span> (middle) and <span class="math inline">\(q=0\)</span> (bottom).
-</figcaption>
-</figure>
+<p>We consider a general Crump–Mode–Jagers branching process with finitely many types. In the model, the individuals reproduce independently of one another, each according to its copy of some point process <span class="math inline">\(\xi\)</span>. We consider the process counted with a random characteristic, which allows to treat simultaneously various quantities such as the number of particles born up to time <span class="math inline">\(t\)</span>, the number of particles of certain type alive at time <span class="math inline">\(t\)</span>, etc.</p>
+<p>In the talk, I will present a limit theorem that describes the asymptotic fluctuations of a CMJ process under appropriate moment assumptions on the reproduction process <span class="math inline">\(\xi\)</span> and on the characteristic. As we will see, the behaviour of the process is governed mostly by certain intrinsic martingales, and the fluctuations are Gaussian with random variance.</p>
+<p>The talk is based on joint work with Konrad Kolesko and Matthias Meiners.</p>
 
 
 

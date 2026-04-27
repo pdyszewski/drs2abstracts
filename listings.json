@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/abstracts_list.html",
+    "listing": "/index.html",
     "items": [
       "/abstracts/Lee.html",
       "/abstracts/Kriechbaum.html",
@@ -10,6 +10,7 @@
       "/abstracts/Hu.html",
       "/abstracts/Olzhabayev.html",
       "/abstracts/Bisi.html",
+      "/abstracts/Kolodziejska.html",
       "/abstracts/Quattropani.html",
       "/abstracts/Thevenin.html",
       "/abstracts/mentemeier.html",
@@ -49,7 +50,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/abstracts_list.html",
     "items": [
       "/abstracts/Lee.html",
       "/abstracts/Kriechbaum.html",
@@ -59,6 +60,7 @@
       "/abstracts/Hu.html",
       "/abstracts/Olzhabayev.html",
       "/abstracts/Bisi.html",
+      "/abstracts/Kolodziejska.html",
       "/abstracts/Quattropani.html",
       "/abstracts/Thevenin.html",
       "/abstracts/mentemeier.html",
