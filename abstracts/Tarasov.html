@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lars Schroeder (University of Twente)">
+<meta name="author" content="Aleksandr Tarasov (University of Hildesheim)">
 
-<title>node2vec random walks: Regular graphs and recurrence</title>
+<title>Generalized reflection principle for random walks</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -119,8 +90,14 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">node2vec random walks: Regular graphs and recurrence</h1>
-</div>
+<h1 class="title">Generalized reflection principle for random walks</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Reflection principle</div>
+    <div class="quarto-category">random walks in cones</div>
+    <div class="quarto-category">Berry-Esseen bound</div>
+    <div class="quarto-category">local limit theorem</div>
+  </div>
+  </div>
 
 
 
@@ -129,7 +106,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Lars Schroeder (University of Twente) </p>
+             <p>Aleksandr Tarasov (University of Hildesheim) </p>
           </div>
   </div>
     
@@ -142,16 +119,7 @@ window.Quarto = {
 </header>
 
 
-<p>node2vec random walks are tuneable random walks that come from the popular algorithm node2vec <span class="math inline">\([1]\)</span>, which is used for network embedding. The transition probabilities of the random walk depend on the previous visited node and on the triangles that contain the current and the previous node as shown in Figure 1. In the node2vec algorithm, node2vec random walks are used to sample neighborhoods for each node of the network and by comparing these an embedding of the network into a Euclidean space can be computed. Since the parameters of the random walks can be tuned to create different types of neighborhoods, this approach is very flexible and advantageous over just using simple random walks.</p>
-<p>Even though the algorithm is widely used in practice, mathematical properties of node2vec random walks almost have not been investigated and even basic questions such as how the stationary distribution depends on the walk parameters and if the random walk is recurrent are nearly unexplored. In this talk, we study the behavior of node2vec random walks on regular graphs. By going to a higher-order state space, the space of directed wedges, we can prove a simple expression of the stationary distribution on this space which is determined by the transition type of the wedge. We also formalize a pullback mechanism to retrieve the stationary distribution on the original state space. Further, we show that on infinite regular graphs, node2vec random walks are recurrent if and only if the simple random walk is recurrent. Joint work with Luca Avena, Gianmarco Bet and Clara Stegehuis.</p>
-<figure data-latex-placement="h" class="figure">
-<img src="node2vecimage.png" style="width:100.0%" class="figure-img">
-<figcaption>
-node2vec transition rates
-</figcaption>
-</figure>
-<p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aditya Grover, Jure Leskovec. "node2vec: Scalable feature learning for networks." In: <em>Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining</em>, 2016, pp.&nbsp;855–864. <a href="https://doi.org/10.1145/2939672.2939754">doi</a></p>
+<p>For a simple random walk starting at zero, the classical reflection principle allows one to compute probabilities for paths staying positive, but it exploits the fact that the walk has no overshoot. In this talk we show how the idea of reflection can be applied to a general random walk. For a one-dimensional random walk conditioned to stay positive, we use this approach to obtain the Berry-Esseen bound and to simplify the asymptotic expansions in the local limit theorem, in particular making their coefficients computable. Then we sketch how the reflection principle can be extended to a two-dimensional random walk conditioned to stay in a cone.</p>
 
 
 

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lars Schroeder (University of Twente)">
+<meta name="author" content="Matteo Quattropani (Università degli Studi Roma Tre)">
 
-<title>node2vec random walks: Regular graphs and recurrence</title>
+<title>Convergence to equilibrium of Stochastic Exchange Models</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,8 +119,14 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">node2vec random walks: Regular graphs and recurrence</h1>
-</div>
+<h1 class="title">Convergence to equilibrium of Stochastic Exchange Models</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Averaging process</div>
+    <div class="quarto-category">KMP</div>
+    <div class="quarto-category">mixing time</div>
+    <div class="quarto-category">cutoff phenomenon</div>
+  </div>
+  </div>
 
 
 
@@ -129,7 +135,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Lars Schroeder (University of Twente) </p>
+             <p>Matteo Quattropani (Università degli Studi Roma Tre) </p>
           </div>
   </div>
     
@@ -142,16 +148,27 @@ window.Quarto = {
 </header>
 
 
-<p>node2vec random walks are tuneable random walks that come from the popular algorithm node2vec <span class="math inline">\([1]\)</span>, which is used for network embedding. The transition probabilities of the random walk depend on the previous visited node and on the triangles that contain the current and the previous node as shown in Figure 1. In the node2vec algorithm, node2vec random walks are used to sample neighborhoods for each node of the network and by comparing these an embedding of the network into a Euclidean space can be computed. Since the parameters of the random walks can be tuned to create different types of neighborhoods, this approach is very flexible and advantageous over just using simple random walks.</p>
-<p>Even though the algorithm is widely used in practice, mathematical properties of node2vec random walks almost have not been investigated and even basic questions such as how the stationary distribution depends on the walk parameters and if the random walk is recurrent are nearly unexplored. In this talk, we study the behavior of node2vec random walks on regular graphs. By going to a higher-order state space, the space of directed wedges, we can prove a simple expression of the stationary distribution on this space which is determined by the transition type of the wedge. We also formalize a pullback mechanism to retrieve the stationary distribution on the original state space. Further, we show that on infinite regular graphs, node2vec random walks are recurrent if and only if the simple random walk is recurrent. Joint work with Luca Avena, Gianmarco Bet and Clara Stegehuis.</p>
-<figure data-latex-placement="h" class="figure">
-<img src="node2vecimage.png" style="width:100.0%" class="figure-img">
-<figcaption>
-node2vec transition rates
-</figcaption>
-</figure>
+<p>
+<a href="https://sites.google.com/view/matteo-quattropani/home" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Homepage </a>
+</p>
+<p>A Stochastic Exchange Model (SEM) is a Markov process in which a number of particles (or agents) repeatedly exchange a conserved continuous quantity, such as energy or money, according to a random dynamics. We will imagine the particles as the vertices of an undirected, finite, connected graph and equip each edge with a Poisson clock: when the edge connecting <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> rings, the associated particles perform an exchange of their current amount of energy, which might be deterministic or random, depending on the model.</p>
+<p>The simplest model one can imagine is the one in which, whenever an exchange occurs, the two particles split their total energy deterministically in two halves. This model usually goes under the name of Averaging process (AVG), and has been studied extensively in recent years (see, e.g., <span class="math inline">\([2]\)</span>, <span class="math inline">\([4\)</span>–<span class="math inline">\(8]\)</span>, <span class="math inline">\([10\)</span>–<span class="math inline">\(11]\)</span>). In this case, regardless of the underlying graph, in the long run the system will converge to a flat configuration in which all particles carry the same amount of energy.</p>
+<p>It is also natural to consider variants in which the exhange mechanism is itself random. A well-known instance of this class of models is the so-called Kipnis–Marchioro–Presutti model (KMP), in which, at an exchange time, the total amount of energy at the two particles is divided randomly according to a uniform distribution, (see, e.g., <span class="math inline">\([3]\)</span>, <span class="math inline">\([6]\)</span>, <span class="math inline">\([9]\)</span>, <span class="math inline">\([12]\)</span>). In contrast to the AVG, the stationary distribution of such a dynamics is not singular, being in fact the uniform distribution on the energy simplex.</p>
+<p>Of course, even though the graph geometry does not affect the equilibrium of these dynamics, it can have a major impact of the time the process needs to approach such a stationary state.</p>
+<p>In this talk I will survey recent results on the convergence to equilibrium of general SEMs. I will emphasize, on the one hand, the effect of the underlying graph geometry on the convergence time and, on the other hand, the analysis of the mean-field case (i.e., when the underlying graph is complete), where AVG, KMP, and several other SEMs can be shown to exhibit the same out-of-equilibrium behavior when convergence is measured in a suitable Wasserstein metric.</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aditya Grover, Jure Leskovec. "node2vec: Scalable feature learning for networks." In: <em>Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining</em>, 2016, pp.&nbsp;855–864. <a href="https://doi.org/10.1145/2939672.2939754">doi</a></p>
+<p><span class="math inline">\([1]\)</span> D. Aldous and D. Lanoue, <em>A lecture on the averaging process</em>, Probability Surveys, 9:90–102, 2012.</p>
+<p><span class="math inline">\([2]\)</span> S. Chatterjee, P. Diaconis, A. Sly, and L. Zhang, <em>A phase transition for repeated averages</em>, Annals of Probability, 50(1):1–17, 2022.</p>
+<p><span class="math inline">\([3]\)</span> P. Caputo, C. Labbé and H. Lacoin, <em>Mixing time of the adjacent walk on the simplex</em>, Annals of Probability, 48(5):2449–2493, 2020.</p>
+<p><span class="math inline">\([4]\)</span> P. Caputo, M. Quattropani, and F. Sau, <em>Cutoff for the averaging process on the hypercube and complete bipartite graphs</em>, Electronic Journal of Probability, 28:100, 2023.</p>
+<p><span class="math inline">\([5]\)</span> P. Caputo, M. Quattropani and F. Sau, <em>Random Block Averages: cutoff and mixing profiles</em>, arXiv, 2024.</p>
+<p><span class="math inline">\([6]\)</span> P. Caputo, M. Quattropani and F. Sau, <em>A universal cutoff phenomenon for mean-field exchange models</em>, arXiv, 2025.</p>
+<p><span class="math inline">\([7]\)</span> P. Caputo, M. Quattropani and F. Sau, <em><span class="math inline">\(L^2\)</span>-cutoff for the Averaging process on random regular graphs</em>, arXiv, 2026.</p>
+<p><span class="math inline">\([8]\)</span> D. Elboim, Y. Peres, R. Peretz, <em>The edge-averaging process on graphs with random initial opinions</em>, Proceedings of the National Academy of Sciences, 122(33), 2025.</p>
+<p><span class="math inline">\([9]\)</span> S. Kim, M. Quattropani and F. Sau, <em>Spectral gap of the KMP and other stochastic exchange models on arbitrary graphs</em>, arXiv, 2025.</p>
+<p><span class="math inline">\([10]\)</span> R. Movassagh, M. Szegedy and G. Wang <em>Repeated averages on graphs</em>, Annals of Applied Probability, 34(4):3781–3819, 2024.</p>
+<p><span class="math inline">\([11]\)</span> M. Quattropani and F. Sau, <em>Mixing of the Averaging process and its discrete dual on finite-dimensional geometries</em>, Annals of Applied Probability, 33(2):1136–1171, 2023.</p>
+<p><span class="math inline">\([12]\)</span> A Smith, <em>A Gibbs sampler on the n-simplex</em>, Annals of Applied Probability, 24(1):114–130, 2014.</p>
 
 
 

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lars Schroeder (University of Twente)">
+<meta name="author" content="Bastien Mallein (Université de Toulouse)">
 
-<title>node2vec random walks: Regular graphs and recurrence</title>
+<title>Elephants explore in spirals (sometimes)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,8 +119,14 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">node2vec random walks: Regular graphs and recurrence</h1>
-</div>
+<h1 class="title">Elephants explore in spirals (sometimes)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Random walk</div>
+    <div class="quarto-category">Reinforcement</div>
+    <div class="quarto-category">Law of large numbers</div>
+    <div class="quarto-category">Central limit theorem</div>
+  </div>
+  </div>
 
 
 
@@ -129,7 +135,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Lars Schroeder (University of Twente) </p>
+             <p>Bastien Mallein (Université de Toulouse) </p>
           </div>
   </div>
     
@@ -142,16 +148,15 @@ window.Quarto = {
 </header>
 
 
-<p>node2vec random walks are tuneable random walks that come from the popular algorithm node2vec <span class="math inline">\([1]\)</span>, which is used for network embedding. The transition probabilities of the random walk depend on the previous visited node and on the triangles that contain the current and the previous node as shown in Figure 1. In the node2vec algorithm, node2vec random walks are used to sample neighborhoods for each node of the network and by comparing these an embedding of the network into a Euclidean space can be computed. Since the parameters of the random walks can be tuned to create different types of neighborhoods, this approach is very flexible and advantageous over just using simple random walks.</p>
-<p>Even though the algorithm is widely used in practice, mathematical properties of node2vec random walks almost have not been investigated and even basic questions such as how the stationary distribution depends on the walk parameters and if the random walk is recurrent are nearly unexplored. In this talk, we study the behavior of node2vec random walks on regular graphs. By going to a higher-order state space, the space of directed wedges, we can prove a simple expression of the stationary distribution on this space which is determined by the transition type of the wedge. We also formalize a pullback mechanism to retrieve the stationary distribution on the original state space. Further, we show that on infinite regular graphs, node2vec random walks are recurrent if and only if the simple random walk is recurrent. Joint work with Luca Avena, Gianmarco Bet and Clara Stegehuis.</p>
-<figure data-latex-placement="h" class="figure">
-<img src="node2vecimage.png" style="width:100.0%" class="figure-img">
-<figcaption>
-node2vec transition rates
-</figcaption>
-</figure>
+<p>The Elephant Random Walk is a classical toy-model of a reinforced process in which at each step, the walker chooses uniformly at random one of its past steps, and either reproduces it of flip it before reproducing. We consider a bi-dimensional generalization of this process in which at each step, the walker makes a random rotation of the previously remembered step. Write <span class="math inline">\(\Theta\)</span> for the average angle of rotation, we show the following trichotomy on the asymptotic position <span class="math inline">\(S_n\)</span> at time <span class="math inline">\(n\)</span> of the process.</p>
+<ul>
+<li><p>If <span class="math inline">\(\cos(\Theta) &lt; 1/2\)</span>, then <span class="math inline">\(\lim_{n \to \infty} \frac{S_n}{n^{1/2}} = \mathcal{N}_\mathbb{C}(0,\sigma^2_\Theta)\)</span> in law.</p></li>
+<li><p>If <span class="math inline">\(\cos(\Theta) = 1/2\)</span>, then <span class="math inline">\(\lim_{n \to \infty} \frac{S_n}{(n \log n)^{1/2}} = \mathcal{N}_{\mathbb{C}}(0,1)\)</span> in law.</p></li>
+<li><p>If <span class="math inline">\(\cos(\Theta) &gt; 1/2\)</span>, then <span class="math inline">\(\lim_{n \to \infty} \frac{S_n}{n^{\cos(\Theta)}} e^{-i \sin(\Theta) \log n} = W\)</span> a.s. with <span class="math inline">\(W\)</span> a <span class="math inline">\(\mathbb{C}\)</span>-valued random variable.</p></li>
+</ul>
+<p>This is based on a joint work with Lucile Laulin (Modal’X, Université Paris Nanterre).</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aditya Grover, Jure Leskovec. "node2vec: Scalable feature learning for networks." In: <em>Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining</em>, 2016, pp.&nbsp;855–864. <a href="https://doi.org/10.1145/2939672.2939754">doi</a></p>
+<p><span class="math inline">\([1]\)</span> Lucile Laulin and Bastien Mallein. "Elephants explore in spirals sometimes." <em>arXiv e-print</em>, arxiv:2511.16459, <a href="https://doi.org/10.48550/arXiv.2511.16459">doi</a></p>
 
 
 

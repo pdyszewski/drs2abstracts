@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lars Schroeder (University of Twente)">
+<meta name="author" content="Eleanor Archer (Université Paris Dauphine - PSL)">
 
-<title>node2vec random walks: Regular graphs and recurrence</title>
+<title>Local limits of uniform spanning trees</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,8 +119,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">node2vec random walks: Regular graphs and recurrence</h1>
-</div>
+<h1 class="title">Local limits of uniform spanning trees</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Uniform spanning tree</div>
+    <div class="quarto-category">local limit</div>
+  </div>
+  </div>
 
 
 
@@ -129,7 +133,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Lars Schroeder (University of Twente) </p>
+             <p>Eleanor Archer (Université Paris Dauphine - PSL) </p>
           </div>
   </div>
     
@@ -142,16 +146,20 @@ window.Quarto = {
 </header>
 
 
-<p>node2vec random walks are tuneable random walks that come from the popular algorithm node2vec <span class="math inline">\([1]\)</span>, which is used for network embedding. The transition probabilities of the random walk depend on the previous visited node and on the triangles that contain the current and the previous node as shown in Figure 1. In the node2vec algorithm, node2vec random walks are used to sample neighborhoods for each node of the network and by comparing these an embedding of the network into a Euclidean space can be computed. Since the parameters of the random walks can be tuned to create different types of neighborhoods, this approach is very flexible and advantageous over just using simple random walks.</p>
-<p>Even though the algorithm is widely used in practice, mathematical properties of node2vec random walks almost have not been investigated and even basic questions such as how the stationary distribution depends on the walk parameters and if the random walk is recurrent are nearly unexplored. In this talk, we study the behavior of node2vec random walks on regular graphs. By going to a higher-order state space, the space of directed wedges, we can prove a simple expression of the stationary distribution on this space which is determined by the transition type of the wedge. We also formalize a pullback mechanism to retrieve the stationary distribution on the original state space. Further, we show that on infinite regular graphs, node2vec random walks are recurrent if and only if the simple random walk is recurrent. Joint work with Luca Avena, Gianmarco Bet and Clara Stegehuis.</p>
-<figure data-latex-placement="h" class="figure">
-<img src="node2vecimage.png" style="width:100.0%" class="figure-img">
-<figcaption>
-node2vec transition rates
-</figcaption>
+<p>
+<a href="https://sites.google.com/view/eleanorarcher/home" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Homepage </a>
+</p>
+<p>It was shown by Grimmett in 1980 that the local limit of the uniform spanning tree (UST) of the complete graph is the Poisson(1) Bienaymé-Galton-Watson tree conditioned to survive. This was recently extended to hold for USTs of any regular graph sequence with degrees going to infinity by Nachmias and Peres in 2022, and a multitype Poisson tree limit was obtained for non-regular dense graphs by Hladky, Nachmias, and Tran in 2018.</p>
+<div class="center">
+<figure data-latex-placement="h" style="text-align: center;" class="figure">
+<img src="Archer_2dUST-eps-converted-to.png" style="width:50.0%" class="figure-img">
 </figure>
+</div>
+<p>We will discuss recent progress extending this latter result to the non-dense regime. For example this applies to the UST of the configuration model when the degrees tend to infinity slowly.</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aditya Grover, Jure Leskovec. "node2vec: Scalable feature learning for networks." In: <em>Proceedings of the 22nd ACM SIGKDD international conference on Knowledge discovery and data mining</em>, 2016, pp.&nbsp;855–864. <a href="https://doi.org/10.1145/2939672.2939754">doi</a></p>
+<p><span class="math inline">\([1]\)</span> G. R. Grimmett. Random labelled trees and their branching networks. J. Austral. Math. Soc. Ser. A, 30(2):229–237, 1980/81.</p>
+<p><span class="math inline">\([2]\)</span> J. Hladky, A. Nachmias, and T. Tran. The local limit of the uniform spanning tree on dense graphs. J. Stat. Phys., 173(3-4):502–545, 2018.</p>
+<p><span class="math inline">\([3]\)</span> A. Nachmias, Y. Peres. The local limit of uniform spanning trees, Probaility and Related Fields, 182(3), 1133-1161, 2022.</p>
 
 
 
