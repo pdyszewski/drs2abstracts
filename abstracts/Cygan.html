@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Yueyun Hu (Université Sorbonne Paris Nord)">
+<meta name="author" content="Wojciech Cygan (University of Wrocław)">
 
-<title>Average-weight percolation on the complete graph</title>
+<title>Fluctuations of convex hulls of multiple random walks</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,7 +119,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Average-weight percolation on the complete graph</h1>
+<h1 class="title">Fluctuations of convex hulls of multiple random walks</h1>
 </div>
 
 
@@ -129,7 +129,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading"></div>
     <div class="quarto-title-meta-contents">
-             <p>Yueyun Hu (Université Sorbonne Paris Nord) </p>
+             <p>Wojciech Cygan (University of Wrocław) </p>
           </div>
   </div>
     
@@ -142,14 +142,10 @@ window.Quarto = {
 </header>
 
 
-<p>This talk is based on a joint work with Elie Aïdékon (Fudan University, China).</p>
-<p>Attach to each edge of the complete graph on <span class="math inline">\(n\)</span> vertices, i.i.d. exponential random variables with mean <span class="math inline">\(n\)</span>. Aldous (1998) proved that the longest path with average weight below <span class="math inline">\(p\)</span> undergoes a phase transition at <span class="math inline">\(p=\frac{1}{e}\)</span>: it is <span class="math inline">\(o(n)\)</span> when <span class="math inline">\(p&lt;\frac{1}{e}\)</span> and of order <span class="math inline">\(n\)</span> if <span class="math inline">\(p&gt;\frac1e\)</span>. Later, Ding (2013) revealed a finer phase transition around <span class="math inline">\(\frac{1}{e}\)</span>: there exist <span class="math inline">\(c'&gt;c&gt;0\)</span> such that the length of the longest path is of order <span class="math inline">\(\ln^3 n\)</span> if <span class="math inline">\(p \le \frac{1}{e}+\frac{c}{\ln^2 n}\)</span> and is polynomial if <span class="math inline">\(p\ge  \frac{1}{e}+\frac{c'}{\ln^2 n}\)</span>. We identify the location of this phase transition and obtain sharp asymptotics of the length near criticality. The proof uses an exploration mechanism mimicking a branching random walk with selection introduced by Brunet and Derrida (1999).</p>
-<p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> Aldous, D. (1998). On the critical value for ‘percolation’ of minimum-weight trees in the mean-field distance model. <em>Comb. Probab. Comput.</em>, <strong>7</strong>, 1–10.</p>
-<p><span class="math inline">\([2]\)</span> Bérard, J. and Gouéré, J.-B. &nbsp;(2010). Brunet-Derrida behavior of branching-selection particle systems on the line. <em>Commun. Math. Phys.</em>, <strong>298</strong>, 323–342.</p>
-<p><span class="math inline">\([3]\)</span> Brunet, E. and Derrida, B. &nbsp;(1999). Microscopic models of traveling wave equations. <em>Computer Physics Communications</em>, <strong>121-122</strong>, 376–381.</p>
-<p><span class="math inline">\([4]\)</span> Ding, J. &nbsp;(2013). Scaling window for mean-field percolation of averages. <em>Ann. Probab.</em> <strong>41</strong>, 4407–4427.</p>
-<p><span class="math inline">\([5]\)</span> Ding, J. and Goswami, S. &nbsp;(2015). Percolation of averages in the stochastic mean field model: the near-supercritical regime. <em>Electron. J. Probab.</em>, <strong>20</strong>.</p>
+<p>Given the <span class="math inline">\(n\)</span>-step trajectories of <span class="math inline">\(N\)</span> independent random walks in <span class="math inline">\(\mathbb{R}^2\)</span> with increments of finite second moment, let <span class="math inline">\(D_n\)</span> and <span class="math inline">\(L_n\)</span> denote the diameter and perimeter of their convex hull, i.e., the minimal convex polygon containing all trajectories.</p>
+<p>In this talk, we present large-time <span class="math inline">\(L^2\)</span> and distributional limit theorems for the sequences <span class="math inline">\((D_n)\)</span> and <span class="math inline">\((L_n)\)</span>. Previous work treated the cases <span class="math inline">\(N \in \{1,2\}\)</span>, showing that for generic configurations of the drift vectors, the limiting distributions are Gaussian.</p>
+<p>We extend these results to all <span class="math inline">\(N&gt;1\)</span>, showing that for exceptional configurations of the drift vectors, the limits are necessarily non-Gaussian, and we provide a concise and explicit description of these limiting distributions.</p>
+<p>Our approach is based on a multivariate extension of Wald’s maximal central limit theorem for one-dimensional random walks. As an application, we also obtain sharp approximation results for the convex hull in the Hausdorff metric.</p>
 
 
 
