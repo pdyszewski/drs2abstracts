@@ -4,7 +4,6 @@
     "items": [
       "/abstracts/Lee.html",
       "/abstracts/Kriechbaum.html",
-      "/drs2abstracts/abstracts/1.html",
       "/abstracts/Kolesnik.html",
       "/abstracts/Meiners.html",
       "/abstracts/Hu.html",
@@ -49,7 +48,6 @@
       "/abstracts/shiatis.html",
       "/abstracts/Samuel.html",
       "/abstracts/Bartoszek.html",
-      "/drs2abstracts/abstracts/abstract_template.html",
       "/abstracts/Szarek.html",
       "/abstracts/JCP.html",
       "/abstracts/Chataignier.html",
@@ -58,16 +56,10 @@
   },
   {
     "listing": "/drs2abstracts/abstracts_list.html",
-    "items": [
-      "/drs2abstracts/abstracts/1.html",
-      "/drs2abstracts/abstracts/abstract_template.html"
-    ]
+    "items": []
   },
   {
     "listing": "/drs2abstracts/index.html",
-    "items": [
-      "/drs2abstracts/abstracts/1.html",
-      "/drs2abstracts/abstracts/abstract_template.html"
-    ]
+    "items": []
   }
 ]
