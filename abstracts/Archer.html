@@ -163,6 +163,7 @@ window.Quarto = {
 <h1 class="title">Local limits of uniform spanning trees</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Uniform spanning tree</div>
+    <div class="quarto-category">massive spanning forest</div>
     <div class="quarto-category">local limit</div>
   </div>
   </div>
@@ -209,17 +210,19 @@ window.Quarto = {
 <p>
 <a href="https://sites.google.com/view/eleanorarcher/home" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer"> Homepage </a>
 </p>
-<p>It was shown by Grimmett in 1980 that the local limit of the uniform spanning tree (UST) of the complete graph is the Poisson(1) Bienaymé-Galton-Watson tree conditioned to survive. This was recently extended to hold for USTs of any regular graph sequence with degrees going to infinity by Nachmias and Peres in 2022, and a multitype Poisson tree limit was obtained for non-regular dense graphs by Hladky, Nachmias, and Tran in 2018.</p>
-<div class="center">
-<figure data-latex-placement="h" style="text-align: center;" class="figure">
-<img src="Archer_2dUST-eps-converted-to.png" style="width:50.0%" class="figure-img">
+<p>The <span class="math inline">\(\lambda\)</span>-spanning forest (<span class="math inline">\(\lambda\)</span>-SF) on a graph <span class="math inline">\(G\)</span> is a random subgraph of <span class="math inline">\(G\)</span> that is equal to a given forest <span class="math inline">\(f\)</span> with probability proportional to <span class="math display">\[\lambda^{N_f} \prod_{i=1}^{N_f} |C_i|,\]</span> where <span class="math inline">\(N_f\)</span> is the number of components of <span class="math inline">\(f\)</span> and <span class="math inline">\(C_i\)</span> is the <span class="math inline">\(i^{th}\)</span> component. The case <span class="math inline">\(\lambda=0\)</span> corresponds to the classical model of the uniform spanning tree (UST).</p>
+<p>It was shown by Grimmett in 1980 [2] that the local limit of the UST of the complete graph is the Poisson(1) Bienaymé-Galton-Watson tree conditioned to survive, denoted <span class="math inline">\(\mathcal{T}_{0}\)</span>. An analogous result was recently obtained for <span class="math inline">\(\lambda_n\)</span>-spanning forests on the complete graph <span class="math inline">\(K_n\)</span>: in [1], it was shown that the <span class="math inline">\(\lambda_n\)</span>-SF of <span class="math inline">\(K_n\)</span> exhibits three types of asymptotic behaviour, depending on how the parameter <span class="math inline">\(\lambda_n\)</span> grows on <span class="math inline">\(n\)</span>. In particular, the authors showed that the root component <span class="math inline">\(C_{n, \lambda}\)</span>, viewed as a rooted tree, satisfies <span class="math display">\[C_{n, \lambda} \underset{\text{loc}}{\overset{(d)}{\longrightarrow}} \begin{cases}
+\mathcal{T}_0 &amp; \text{ if } \lambda_n \ll n, \\
+\mathcal{T}_{\alpha} &amp; \text{ if } \lambda_n \sim \alpha n, \\
+\{ \cdot \}  &amp; \text{ if } \lambda_n \gg n.
+\end{cases}\]</span> Here <span class="math inline">\(\mathcal{T}_{\alpha}\)</span> is an explicit random tree whose law depends on <span class="math inline">\(\alpha\)</span>, and <span class="math inline">\(\{ \cdot \}\)</span> is the graph that it is the singleton. The convergence can also be stated with respect to the discrete topology in the latter two cases, as the limiting graphs are finite.</p>
+<figure style="text-align: center;" class="figure">
+<img src="2dUSF.png" class="responsive-img figure-img">
 </figure>
-</div>
-<p>We will discuss recent progress extending this latter result to the non-dense regime. For example this applies to the UST of the configuration model when the degrees tend to infinity slowly.</p>
+<p>We will discuss a recent result with Breki Pàlsson showing that the same result holds for <span class="math inline">\(\lambda_n\)</span>-SFs of any regular graph sequence with degrees tending to infinity; in this case the parameter <span class="math inline">\(\lambda_n\)</span> must be tuned as a multiple of the degree <span class="math inline">\(d_n\)</span>.</p>
 <p><strong>Bibliography</strong></p>
-<p><span class="math inline">\([1]\)</span> G. R. Grimmett. Random labelled trees and their branching networks. J. Austral. Math. Soc. Ser. A, 30(2):229–237, 1980/81.</p>
-<p><span class="math inline">\([2]\)</span> J. Hladky, A. Nachmias, and T. Tran. The local limit of the uniform spanning tree on dense graphs. J. Stat. Phys., 173(3-4):502–545, 2018.</p>
-<p><span class="math inline">\([3]\)</span> A. Nachmias, Y. Peres. The local limit of uniform spanning trees, Probaility and Related Fields, 182(3), 1133-1161, 2022.</p>
+<p><span class="math inline">\([1]\)</span> Matteo D’Achille, Nathanael Enriquez, and Paul Melotti. Massive spanning forests on the complete graph: Exact distribution and local limit. Random Structures and Algorithms, 68(2):e70048, 2026.</p>
+<p><span class="math inline">\([2]\)</span> G. R. Grimmett. Random labelled trees and their branching networks. J. Austral. Math. Soc. Ser. A, 30(2):229–237, 1980/81.</p>
 
 
 
