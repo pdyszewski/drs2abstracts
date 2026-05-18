@@ -8,7 +8,7 @@
 
 <meta name="author" content="Gerold Alsmeyer">
 
-<title>TBA</title>
+<title>Keilson’s theorem and the challenges of time attribution</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -131,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TBA</h1>
+<h1 class="title">Keilson’s theorem and the challenges of time attribution</h1>
 </div>
 
 
@@ -144,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            University of Münster
+            Universität Münster
           </p>
       </div>
   </div>
@@ -173,6 +202,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Keilson’s theorem states that the time to absorption in <span class="math inline">\(N\)</span> of a birth-death process on <span class="math inline">\(\mathbb{N}\)</span> with starting point 0 is the sum of <span class="math inline">\(N\)</span> independent exponential random variables with parameters given by the absolute spectral eigenvalues of the killed generator. Although easy to state and not too difficult to prove by means of Laplace transforms, the intriguing and somewhat mysterious aspect of the result is how the time given by the exponential variables can be attributed. An answer was provided by Miclo and Diaconis by relating these variables to strong quasi-stationary times via a clever intertwinement of the given process with a certain dual process. By a comparison of Keilson’s spectral decomposition of the absorption time with two other decompositions – based on ladder epochs and total sojourn and again involving exponential random variables – I will try to explain that the problem of time attribution still leaves room for questions.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Diaconis, P. and Miclo, L. (2009). On times to quasi-stationarity for birth and death processes. J.&nbsp;Theoret.&nbsp;Probab., 22(3):558–586.</p>
+<p><span class="math inline">\([2]\)</span> Fill, J.A. (2009). The passage time distribution for a birth-and-death chain: strong stationary duality gives a first stochastic proof. J.&nbsp;Theoret.&nbsp;Probab., 22(3):543–557.</p>
+<p><span class="math inline">\([3]\)</span> Keilson, J. (1979). <em>Markov Chain Models – Rarity and Exponentiality</em>, volume&nbsp;28 of <em>Applied Mathematical Sciences</em>. Springer-Verlag, New York-Berlin.</p>
 
 
 
