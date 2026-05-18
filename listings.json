@@ -12,7 +12,6 @@
       "/abstracts/Kolodziejska.html",
       "/abstracts/Quattropani.html",
       "/abstracts/Thevenin.html",
-      "/abstracts/mentemeier.html",
       "/abstracts/mallein.html",
       "/abstracts/Lodewijks.html",
       "/abstracts/Cygan.html",
@@ -21,6 +20,7 @@
       "/abstracts/Tarasov.html",
       "/abstracts/Twigt.html",
       "/abstracts/Stonner.html",
+      "/abstracts/Gerold.html",
       "/abstracts/Raschel.html",
       "/abstracts/Feshchenko.html",
       "/abstracts/Henard.html",
@@ -43,7 +43,6 @@
       "/abstracts/ShiQuan.html",
       "/abstracts/Verovkin.html",
       "/abstracts/basrak.html",
-      "/abstracts/Gerold.html",
       "/abstracts/kerriou.html",
       "/abstracts/shiatis.html",
       "/abstracts/Samuel.html",
@@ -53,13 +52,5 @@
       "/abstracts/Chataignier.html",
       "/abstracts/Schroeder.html"
     ]
-  },
-  {
-    "listing": "/drs2abstracts/abstracts_list.html",
-    "items": []
-  },
-  {
-    "listing": "/drs2abstracts/index.html",
-    "items": []
   }
 ]
